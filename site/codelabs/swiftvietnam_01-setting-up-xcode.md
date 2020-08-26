@@ -11,7 +11,7 @@ Feedback Link: https://swiftvietnam.com
 ## Overview 
 Duration: 1
 
-### What You’ll Learn 
+### Bạn sẽ học gì?
 - Register for a free developer account.
 - Download Xcode from apple developer website.
 - Setting up Xcode.

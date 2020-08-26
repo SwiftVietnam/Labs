@@ -11,7 +11,7 @@ Feedback Link: https://swiftvietnam.com
 ## Overview 
 Duration: 1
 
-### What You’ll Learn 
+### Bạn sẽ học gì?
 - Create a `List`.
 - Create a `CardView`.
 - Separate an UI element to a separated `View`

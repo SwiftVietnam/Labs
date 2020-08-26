@@ -1,20 +1,18 @@
-summary: Swift Việt Nam - Data structure.
-id: swiftvietnam_04-data-structure
+summary: Swift Việt Nam - Using UIKit.
+id: swiftvietnam_05-using-uikit
 categories: swiftvietnam
 tags: swiftvietnam
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 4: Data Structure
+# Swift Việt Nam - Bài 5: Using UIKit
 <!-- ------------------------ -->
 ## Overview
 Duration: 1
 
 ### Bạn sẽ học gì?
-- Creating data structures
-- Adding properties to Item
-- Making a SwiftUI view dynamic
+- Integrate UIKit components into SwiftUI apps
 
 <!-- ------------------------ -->
 ## Creating `NewsItem` 

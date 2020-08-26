@@ -11,7 +11,7 @@ Feedback Link: https://swiftvietnam.com
 ## Overview 
 Duration: 1
 
-### What You’ll Learn 
+### Bạn sẽ học gì?
 - Create a SwiftUI project from Xcode's template.
 - Making a first change in the code.
 
@@ -45,11 +45,3 @@ struct ContentView: View {
 
 ### Run app on Simulator
 ![02_06_simulator](assets/02/02_06_simulator.png)
-
-<!-- 
-## Cleanup the template project
-Duration: 3
-
-- Change the header: Keep it short and simple, make it generic and not containing changing parts (filename, timestamp).
-- Wrap Preview in #DEBUG: Reduce app size, don't ship code not related to production.
--->
