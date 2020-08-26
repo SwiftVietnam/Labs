@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pushd site/codelabs
+pushd codelabs
 claat export *.md
 popd
 
