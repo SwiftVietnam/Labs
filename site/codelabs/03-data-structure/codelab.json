@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-08-26T15:28:13+08:00",
+  "id": "03-data-structure",
+  "duration": 1,
+  "title": "Data Structure",
+  "authors": "An Tran",
+  "summary": "Data structure.",
+  "source": "03-data-structure.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "swiftvietnam"
+  ],
+  "tags": [
+    "swiftvietnam"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "03-data-structure"
+}

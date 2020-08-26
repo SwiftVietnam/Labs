@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-08-26T15:30:56+08:00",
+  "id": "02-swiftui-hello-world",
+  "duration": 22,
+  "title": "Hello World SwiftUI",
+  "authors": "An Tran",
+  "summary": "Hello World SwiftUI.",
+  "source": "02-swiftui-hello-world.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "swiftvietnam"
+  ],
+  "tags": [
+    "swiftvietnam"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "02-swiftui-hello-world"
+}

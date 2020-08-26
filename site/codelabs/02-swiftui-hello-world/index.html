@@ -1,0 +1,167 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Hello World SwiftUI</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="02-swiftui-hello-world"
+                  title="Hello World SwiftUI"
+                  environment="web"
+                  feedback-link="https://swiftvietnam.com">
+    
+      <google-codelab-step label="Overview" duration="1">
+        <h2 class="checklist" is-upgraded>What You&#39;ll Learn</h2>
+<ul class="checklist">
+<li>Create a SwiftUI project from Xcode&#39;s template</li>
+<li>Create a <code>List</code>.</li>
+<li>Create a <code>CardView</code>.</li>
+<li>Make it dynamic.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Create a SwiftUI project" duration="3">
+        <h2 is-upgraded>Create a SwiftUI project</h2>
+<p class="image-container"><img alt="02_01_create_project" src="img/663685faca75db83.png"><img alt="02_02_create_project" src="img/e2aaa37dfb44a25c.png"></p>
+<h2 is-upgraded>SwiftUI preview panel</h2>
+<p class="image-container"><img alt="02_03_create_project" src="img/eb9d0032f00aed6f.png"><img alt="02_04_preview" src="img/1d389a8ef9063281.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Running on a simulator" duration="3">
+        <h2 is-upgraded>Change &#34;Hello, World&#34; to &#34;Hello, Swift Vietnam&#34;</h2>
+<pre><code>struct ContentView: View {
+    var body: some View {
+        Text(&#34;Hello, Swift Vietnam!&#34;).padding()
+    }
+}
+</code></pre>
+<p class="image-container"><img alt="02_05_hello_swift_vietnam" src="img/e5c7925bd40158c7.png"></p>
+<h2 is-upgraded>Run app on Simulator</h2>
+<p class="image-container"><img alt="02_06_simulator" src="img/39f4bbe59f87100c.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Create a list" duration="3">
+        <pre><code>struct ContentView: View {
+    var body: some View {
+        List {
+            Text(&#34;Bản tin Swift 1&#34;)
+        }
+    }
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Dupplicate the text" duration="3">
+        <pre><code>struct ContentView: View {
+    var body: some View {
+        List {
+            Text(&#34;Bản tin Swift #5&#34;)
+            Text(&#34;Bản tin Swift #4&#34;)
+            Text(&#34;Bản tin Swift #3&#34;)
+            Text(&#34;Bản tin Swift #2&#34;)
+            Text(&#34;Bản tin Swift #1&#34;)
+        }
+    }
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Change headline font" duration="3">
+        <pre><code>struct ContentView: View {
+    var body: some View {
+        List {
+            Text(&#34;Bản tin Swift #5&#34;)
+                .font(.headline)
+            Text(&#34;Bản tin Swift #4&#34;)
+                .font(.headline)
+            Text(&#34;Bản tin Swift #3&#34;)
+                .font(.headline)
+            Text(&#34;Bản tin Swift #2&#34;)
+                .font(.headline)
+            Text(&#34;Bản tin Swift #1&#34;)
+                .font(.headline)
+        }
+    }
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Separate Item into 
+ItemView" duration="3">
+        <ul>
+<li>Separate the view of each item into a <code>ItemView</code></li>
+</ul>
+<pre><code>struct ContentView: View {
+    var body: some View {
+        List {
+            NewsItemView(title: &#34;Bản tin Swift #5&#34;)
+            NewsItemView(title: &#34;Bản tin Swift #4&#34;)
+            NewsItemView(title: &#34;Bản tin Swift #3&#34;)
+            NewsItemView(title: &#34;Bản tin Swift #2&#34;)
+            NewsItemView(title: &#34;Bản tin Swift #1&#34;)
+        }
+    }
+}
+
+struct NewsItemView: View {
+    var title: String
+
+    var body: some View {
+        Text(title)
+            .font(.headline)
+    }
+}
+</code></pre>
+<p>&lt;!–</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Cleanup the template project" duration="3">
+        <ul>
+<li>Change the header: Keep it short and simple, make it generic and not containing changing parts (filename, timestamp).</li>
+<li>Wrap Preview in #DEBUG: Reduce app size, don&#39;t ship code not related to production. –&gt;</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
