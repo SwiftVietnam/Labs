@@ -45,11 +45,3 @@ struct ContentView: View {
 
 ### Run app on Simulator
 ![02_06_simulator](assets/02/02_06_simulator.png)
-
-<!-- 
-## Cleanup the template project
-Duration: 3
-
-- Change the header: Keep it short and simple, make it generic and not containing changing parts (filename, timestamp).
-- Wrap Preview in #DEBUG: Reduce app size, don't ship code not related to production.
--->
