@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-08-26T22:26:11+08:00",
+  "id": "swiftvietnam_01-setting-up-xcode",
+  "duration": 9,
+  "title": "Swift Việt Nam - Bài 1: Setting up Xcode",
+  "authors": "An Tran",
+  "summary": "Swift Việt Nam - Setting up Xcode.",
+  "source": "swiftvietnam_01-setting-up-xcode.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "swiftvietnam"
+  ],
+  "tags": [
+    "swiftvietnam"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "swiftvietnam_01-setting-up-xcode"
+}
