@@ -37,6 +37,85 @@
 
       </google-codelab-step>
     
+      <google-codelab-step label="Creating 
+NewsItem" duration="3">
+        <pre><code>// In ContentView.swift
+
+struct NewsItem: Hashable {
+    let title: String
+}
+
+struct ContentView: View {
+    let newsItems = [
+        NewsItem(title: &#34;Bản tin Swift #5&#34;),
+        NewsItem(title: &#34;Bản tin Swift #4&#34;),
+        NewsItem(title: &#34;Bản tin Swift #3&#34;),
+        NewsItem(title: &#34;Bản tin Swift #2&#34;),
+        NewsItem(title: &#34;Bản tin Swift #1&#34;)
+    ]
+
+    var body: some View {
+        List {
+            ForEach(newsItems, id: \.self) { item in
+                NewsItemView(item: item)
+            }
+        }
+    }
+}
+
+struct NewsItemView: View {
+    var item: NewsItem
+
+    var body: some View {
+        Text(item.title)
+            .font(.headline)
+    }
+}
+</code></pre>
+<h2 is-upgraded>Kết quả</h2>
+<p class="image-container"><img alt="04_01_creating_newsitem" src="img/a4d29de179b407a9.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Make list of news items dynamic" duration="3">
+        <h2 is-upgraded>Using <code>@State</code> to define a dynamic variable</h2>
+<pre><code>struct ContentView: View {
+    @State var newsItems: [NewsItem] = []
+
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(newsItems, id: \.self) { item in
+                    NewsItemView(item: item)
+                }
+            }
+            .navigationTitle(&#34;Swift Việt Nam&#34;)
+            .navigationBarItems(
+                trailing: Button(action: {
+                    self.newsItems = [
+                        NewsItem(title: &#34;Bản tin Swift #5&#34;),
+                        NewsItem(title: &#34;Bản tin Swift #4&#34;),
+                        NewsItem(title: &#34;Bản tin Swift #3&#34;),
+                        NewsItem(title: &#34;Bản tin Swift #2&#34;),
+                        NewsItem(title: &#34;Bản tin Swift #1&#34;)
+                    ]
+                }) {
+                    Text(&#34;Load&#34;)
+                }
+            )
+        }
+    }
+}
+
+</code></pre>
+<p class="image-container"><img alt="04_02_loading_button" src="img/8894207134a09396.gif"></p>
+<h2 is-upgraded>Kết quả</h2>
+<p class="image-container"><img alt="04_02_loading_button" src="img/8894207134a09396.gif"></p>
+
+
+      </google-codelab-step>
+    
   </google-codelab>
 
   <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
