@@ -1,12 +1,12 @@
-summary: Basic styling.
-id: 03-basic-styling
+summary: Swift Việt Nam - Basic styling.
+id: swiftvietnam_03-basic-styling
 categories: swiftvietnam
 tags: swiftvietnam
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Basic Styling
+# Swift Việt Nam - Bài 3: Basic Styling
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1

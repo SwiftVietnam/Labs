@@ -1,12 +1,12 @@
-summary: Setting up Xcode.
-id: 01-setting-up-xcode
+summary: Swift Việt Nam - Setting up Xcode.
+id: swiftvietnam_01-setting-up-xcode
 categories: swiftvietnam
 tags: swiftvietnam
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Setting up Xcode
+# Swift Việt Nam - Bài 1: Setting up Xcode
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1

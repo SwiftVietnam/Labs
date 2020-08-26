@@ -1,12 +1,12 @@
-summary: Data structure.
-id: 04-data-structure
+summary: Swift Việt Nam - Data structure.
+id: swiftvietnam_04-data-structure
 categories: swiftvietnam
 tags: swiftvietnam
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Data Structure
+# Swift Việt Nam - Bài 4: Data Structure
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1

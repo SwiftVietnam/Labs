@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-26T18:33:43+08:00",
-  "id": "02-swiftui-hello-world",
-  "duration": 10,
-  "title": "Hello World SwiftUI",
+  "updated": "2020-08-26T22:26:01+08:00",
+  "id": "swiftvietnam_04-data-structure",
+  "duration": 1,
+  "title": "Swift Việt Nam - Bài 4: Data Structure",
   "authors": "An Tran",
-  "summary": "Hello World SwiftUI.",
-  "source": "02-swiftui-hello-world.md",
+  "summary": "Swift Việt Nam - Data structure.",
+  "source": "swiftvietnam_04-data-structure.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnam"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "02-swiftui-hello-world"
+  "url": "swiftvietnam_04-data-structure"
 }

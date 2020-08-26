@@ -1,12 +1,12 @@
-summary: Hello World SwiftUI.
-id: 02-swiftui-hello-world
+summary: Swift Việt Nam - Hello World SwiftUI.
+id: swiftvietnam_02-swiftui-hello-world
 categories: swiftvietnam
 tags: swiftvietnam
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Hello World SwiftUI
+# Swift Việt Nam - Bài 2: Xin chào SwiftUI
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1
