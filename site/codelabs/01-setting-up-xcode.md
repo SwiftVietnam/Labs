@@ -52,6 +52,10 @@ Duration: 3
 ## Login into Xcode
 Duration: 3
 
+### Install additonal tools
+![01_10_1_install_additional_tools](assets/01/01_10_1_install_additional_tools.png)
+![01_10_2_login](assets/01/01_10_2_login.png)
+
 ### Login into Xcode using the Apple developer account.
 ![01_10_xcode_login](assets/01/01_10_xcode_login.png)
 ![01_11_xcode_login](assets/01/01_11_xcode_login.png)

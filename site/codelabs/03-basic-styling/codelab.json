@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-26T15:43:30+08:00",
-  "id": "01-setting-up-xcode",
-  "duration": 9,
-  "title": "Setting up Xcode",
+  "updated": "2020-08-26T17:40:30+08:00",
+  "id": "03-basic-styling",
+  "duration": 13,
+  "title": "Basic Styling",
   "authors": "An Tran",
-  "summary": "Setting up Xcode.",
-  "source": "01-setting-up-xcode.md",
+  "summary": "Basic styling.",
+  "source": "03-basic-styling.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnam"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "01-setting-up-xcode"
+  "url": "03-basic-styling"
 }

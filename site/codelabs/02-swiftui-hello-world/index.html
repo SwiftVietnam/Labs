@@ -30,10 +30,8 @@
       <google-codelab-step label="Overview" duration="1">
         <h2 class="checklist" is-upgraded>What You&#39;ll Learn</h2>
 <ul class="checklist">
-<li>Create a SwiftUI project from Xcode&#39;s template</li>
-<li>Create a <code>List</code>.</li>
-<li>Create a <code>CardView</code>.</li>
-<li>Make it dynamic.</li>
+<li>Create a SwiftUI project from Xcode&#39;s template.</li>
+<li>Making a first change in the code.</li>
 </ul>
 
 
@@ -59,88 +57,6 @@
 <p class="image-container"><img alt="02_05_hello_swift_vietnam" src="img/e5c7925bd40158c7.png"></p>
 <h2 is-upgraded>Run app on Simulator</h2>
 <p class="image-container"><img alt="02_06_simulator" src="img/39f4bbe59f87100c.png"></p>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="Create a list" duration="3">
-        <pre><code>struct ContentView: View {
-    var body: some View {
-        List {
-            Text(&#34;Bản tin Swift 1&#34;)
-        }
-    }
-}
-</code></pre>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="Dupplicate the text" duration="3">
-        <pre><code>struct ContentView: View {
-    var body: some View {
-        List {
-            Text(&#34;Bản tin Swift #5&#34;)
-            Text(&#34;Bản tin Swift #4&#34;)
-            Text(&#34;Bản tin Swift #3&#34;)
-            Text(&#34;Bản tin Swift #2&#34;)
-            Text(&#34;Bản tin Swift #1&#34;)
-        }
-    }
-}
-</code></pre>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="Change headline font" duration="3">
-        <pre><code>struct ContentView: View {
-    var body: some View {
-        List {
-            Text(&#34;Bản tin Swift #5&#34;)
-                .font(.headline)
-            Text(&#34;Bản tin Swift #4&#34;)
-                .font(.headline)
-            Text(&#34;Bản tin Swift #3&#34;)
-                .font(.headline)
-            Text(&#34;Bản tin Swift #2&#34;)
-                .font(.headline)
-            Text(&#34;Bản tin Swift #1&#34;)
-                .font(.headline)
-        }
-    }
-}
-</code></pre>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="Separate Item into 
-ItemView" duration="3">
-        <ul>
-<li>Separate the view of each item into a <code>ItemView</code></li>
-</ul>
-<pre><code>struct ContentView: View {
-    var body: some View {
-        List {
-            NewsItemView(title: &#34;Bản tin Swift #5&#34;)
-            NewsItemView(title: &#34;Bản tin Swift #4&#34;)
-            NewsItemView(title: &#34;Bản tin Swift #3&#34;)
-            NewsItemView(title: &#34;Bản tin Swift #2&#34;)
-            NewsItemView(title: &#34;Bản tin Swift #1&#34;)
-        }
-    }
-}
-
-struct NewsItemView: View {
-    var title: String
-
-    var body: some View {
-        Text(title)
-            .font(.headline)
-    }
-}
-</code></pre>
 <p>&lt;!–</p>
 
 
