@@ -1,7 +1,7 @@
 summary: Swift Việt Nam - Hello World SwiftUI.
 id: swiftvietnam_02-swiftui-hello-world
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
@@ -11,7 +11,7 @@ Feedback Link: https://swiftvietnam.com
 ## Overview 
 Duration: 1
 
-### What You’ll Learn 
+### Bạn sẽ học gì?
 - Create a SwiftUI project from Xcode's template.
 - Making a first change in the code.
 

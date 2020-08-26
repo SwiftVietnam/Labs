@@ -3,7 +3,7 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T00:03:21+08:00",
+  "updated": "2020-08-27T01:07:33+08:00",
   "id": "swiftvietnam_02-swiftui-hello-world",
   "duration": 7,
   "title": "Swift Việt Nam - Bài 2: Xin chào SwiftUI",
@@ -15,10 +15,10 @@
     "published"
   ],
   "category": [
-    "swiftvietnam"
+    "swiftui"
   ],
   "tags": [
-    "swiftvietnam"
+    "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
   "url": "swiftvietnam_02-swiftui-hello-world"

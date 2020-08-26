@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T01:07:43+08:00",
-  "id": "swiftvietnam_04-data-structure",
+  "updated": "2020-08-27T01:07:47+08:00",
+  "id": "swiftvietnam_05-using-uikit",
   "duration": 10,
-  "title": "Swift Việt Nam - Bài 4: Data Structure",
+  "title": "Swift Việt Nam - Bài 5: Using UIKit",
   "authors": "An Tran",
-  "summary": "Swift Việt Nam - Data structure.",
-  "source": "swiftvietnam_04-data-structure.md",
+  "summary": "Swift Việt Nam - Using UIKit.",
+  "source": "swiftvietnam_05-using-uikit-in-swiftui.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "swiftvietnam_04-data-structure"
+  "url": "swiftvietnam_05-using-uikit"
 }

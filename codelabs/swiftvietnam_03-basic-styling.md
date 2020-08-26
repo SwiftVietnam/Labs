@@ -1,7 +1,7 @@
 summary: Swift Việt Nam - Basic styling.
 id: swiftvietnam_03-basic-styling
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
@@ -11,7 +11,7 @@ Feedback Link: https://swiftvietnam.com
 ## Overview 
 Duration: 1
 
-### What You’ll Learn 
+### Bạn sẽ học gì?
 - Create a `List`.
 - Create a `CardView`.
 - Separate an UI element to a separated `View`

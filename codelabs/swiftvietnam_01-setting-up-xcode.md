@@ -1,7 +1,7 @@
 summary: Swift Việt Nam - Setting up Xcode.
 id: swiftvietnam_01-setting-up-xcode
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
@@ -11,7 +11,7 @@ Feedback Link: https://swiftvietnam.com
 ## Overview 
 Duration: 1
 
-### What You’ll Learn 
+### Bạn sẽ học gì?
 - Register for a free developer account.
 - Download Xcode from apple developer website.
 - Setting up Xcode.
