@@ -104,7 +104,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div id="searchbar">
           <paper-input-container no-label-float>
             <paper-icon-button prefix icon="search"></paper-icon-button>
-            <label>Search</label>
+            <label>Tìm kiếm</label>
             <input is="iron-input" bind-value="{{searchVal}}" on-keydown="onSearchKeyDown">
           </paper-input-container>
         </div>
@@ -122,7 +122,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <p class="banner-info">
             Codelabs cung cấp các bài hướng dẫn lập trình cho iOS, tvOS, iPadOS, watchOS và macOS sử dụng ngôn ngữ Swift.
             <br>
-            <i>Phát triển bởi cộng đồng <a href="https://swiftvietnam.com">Swift Việt Nam</a></i>
+            <i>Phát triển bởi cộng đồng <a href="https://www.facebook.com/SwiftVietnamCommunity">Swift Việt Nam</a></i>
           </p>
         {%- else -%}
           <div class="banner-description">
@@ -143,14 +143,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div id="sortby">
           <paper-tabs selected="0" noink on-iron-activate="sortBy">
             <paper-tab>A-Z</paper-tab>
-            <paper-tab>Recent</paper-tab>
-            <paper-tab>Duration</paper-tab>
+            <paper-tab>Gần đây</paper-tab>
+            <paper-tab>Thời lượng</paper-tab>
           </paper-tabs>
         </div>
 
-        {% if view.id == 'default' && views.count > 0 %}
+        {% if view.id == 'default' %}
         <paper-dropdown-menu
-          label="Choose an event"
+          label="Chọn chủ đề"
           class="dropdown-filter"
           no-label-float
           noink no-animations
@@ -216,7 +216,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <div class="description">{{codelab.title}}</div>
               <div class="card-duration">
                 <span>{%- if codelab.duration -%}{{codelab.duration}} min {%- endif -%}</span>
-                <span>{%- if codelab.updated -%}Updated {{codePrettyDate(codelab.updated)}}{%- endif -%}</span>
+                <span>{%- if codelab.updated -%}Cập nhật: {{codePrettyDate(codelab.updated)}}{%- endif -%}</span>
               </div>
               <div class="card-footer">
                 <div class="category-icon {{categoryClass(codelab, cat.level)}}-icon"></div>

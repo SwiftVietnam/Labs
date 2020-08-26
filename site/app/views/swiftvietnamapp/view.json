@@ -1,0 +1,12 @@
+{
+  "title": "Swift Việt Nam",
+  "description": "Ứng dụng chính thức của Swift Việt Nam",
+  "tags": ["swiftvietnamapp"],
+  "exclude": [
+    "^lang-.*"
+  ],
+  "logoUrl": "/images/logo.png",
+  "toolbarBgColor": "#37474F",
+  "sort": "mainCategory",
+  "pins": []
+}

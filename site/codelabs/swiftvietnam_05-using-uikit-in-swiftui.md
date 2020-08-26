@@ -1,7 +1,7 @@
 summary: Swift Việt Nam - Using UIKit.
 id: swiftvietnam_05-using-uikit
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com

@@ -1,7 +1,7 @@
 summary: Swift Việt Nam - Basic styling.
 id: swiftvietnam_03-basic-styling
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published 
 authors: An Tran
 Feedback Link: https://swiftvietnam.com

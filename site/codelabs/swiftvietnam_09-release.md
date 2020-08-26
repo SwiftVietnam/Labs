@@ -1,12 +1,12 @@
 summary: Swift Việt Nam - Release.
 id: swiftvietnam_09-release
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 9: Release
+# Swift Việt Nam - Bài 9: Phát hành
 <!-- ------------------------ -->
 ## Overview
 Duration: 1

@@ -1,7 +1,7 @@
 summary: Swift Việt Nam - Data structure.
 id: swiftvietnam_04-data-structure
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com

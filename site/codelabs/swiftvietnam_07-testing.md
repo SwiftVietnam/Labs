@@ -1,12 +1,12 @@
-summary: Swift Việt Nam - Kiểm thử ứng dụng.
+summary: Swift Việt Nam - Kiểm thử.
 id: swiftvietnam_07-testing
-categories: swiftvietnam
-tags: swiftvietnam
+categories: swiftui
+tags: swiftvietnamapp
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 7: Kiểm thử ứng dụng
+# Swift Việt Nam - Bài 7: Kiểm thử
 <!-- ------------------------ -->
 ## Overview
 Duration: 1

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>Swift Việt Nam - Bài 2: Xin chào SwiftUI</title>
+  <title>Swift Việt Nam - Bài 8: Kiểm thử bằng Testflight</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -22,41 +22,19 @@
 <body>
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
-                  id="swiftvietnam_02-swiftui-hello-world"
-                  title="Swift Việt Nam - Bài 2: Xin chào SwiftUI"
+                  id="swiftvietnam_08-testing-with-testflight"
+                  title="Swift Việt Nam - Bài 8: Kiểm thử bằng Testflight"
                   environment="web"
                   feedback-link="https://swiftvietnam.com">
     
       <google-codelab-step label="Overview" duration="1">
         <h2 is-upgraded>Bạn sẽ học gì?</h2>
 <ul>
-<li>Create a SwiftUI project from Xcode&#39;s template.</li>
-<li>Making a first change in the code.</li>
+<li>Tải app lên App Store Connect bằng Xcode</li>
+<li>Cấu hình fastlane</li>
+<li>Sử dụng fastlane để tạo screenshots</li>
+<li>Sử dụng fastlane để đưa app lên Testflight</li>
 </ul>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="Create a SwiftUI project" duration="3">
-        <h2 is-upgraded>Create a SwiftUI project</h2>
-<p class="image-container"><img alt="02_01_create_project" src="img/663685faca75db83.png"><img alt="02_02_create_project" src="img/e2aaa37dfb44a25c.png"></p>
-<h2 is-upgraded>SwiftUI preview panel</h2>
-<p class="image-container"><img alt="02_03_create_project" src="img/eb9d0032f00aed6f.png"><img alt="02_04_preview" src="img/1d389a8ef9063281.png"></p>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="Running on a simulator" duration="3">
-        <h2 is-upgraded>Change &#34;Hello, World&#34; to &#34;Hello, Swift Vietnam&#34;</h2>
-<pre><code>struct ContentView: View {
-    var body: some View {
-        Text(&#34;Hello, Swift Vietnam!&#34;).padding()
-    }
-}
-</code></pre>
-<p class="image-container"><img alt="02_05_hello_swift_vietnam" src="img/e5c7925bd40158c7.png"></p>
-<h2 is-upgraded>Run app on Simulator</h2>
-<p class="image-container"><img alt="02_06_simulator" src="img/39f4bbe59f87100c.png"></p>
 
 
       </google-codelab-step>

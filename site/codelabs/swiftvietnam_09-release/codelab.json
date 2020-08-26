@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T01:07:43+08:00",
-  "id": "swiftvietnam_04-data-structure",
-  "duration": 10,
-  "title": "Swift Việt Nam - Bài 4: Data Structure",
+  "updated": "2020-08-27T01:08:03+08:00",
+  "id": "swiftvietnam_09-release",
+  "duration": 1,
+  "title": "Swift Việt Nam - Bài 9: Phát hành",
   "authors": "An Tran",
-  "summary": "Swift Việt Nam - Data structure.",
-  "source": "swiftvietnam_04-data-structure.md",
+  "summary": "Swift Việt Nam - Release.",
+  "source": "swiftvietnam_09-release.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "swiftvietnam_04-data-structure"
+  "url": "swiftvietnam_09-release"
 }
