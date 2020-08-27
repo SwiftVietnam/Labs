@@ -1,0 +1,153 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Swift Việt Nam - Bài 6: Lấy dữ liệu từ RSS Feed</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="swiftvietnam_06-remote-datasource"
+                  title="Swift Việt Nam - Bài 6: Lấy dữ liệu từ RSS Feed"
+                  environment="web"
+                  feedback-link="https://swiftvietnam.com">
+    
+      <google-codelab-step label="Overview" duration="1">
+        <h2 is-upgraded>Bạn sẽ học gì?</h2>
+<ul>
+<li>Quản lý thư viện bên thứ 3.</li>
+<li>Tìm kiếm Swift Package.</li>
+<li>Tích hợp Swift Package vào Xcode.</li>
+<li>Sử dụng FeedKit để tải RSS Feed từ Internet.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Quản lý 3rd-party dependencies" duration="5">
+        <p>Các lựa chọn để quản lý dependencies</p>
+<ul>
+<li><a href="https://cocoapods.org/" target="_blank">Cocoapods</a></li>
+<li><a href="https://github.com/Carthage/Carthage" target="_blank">Carthage</a></li>
+<li><a href="https://swift.org/package-manager/" target="_blank">Swift Package Manager</a></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tìm kiếm Swift Package" duration="5">
+        <h2 is-upgraded>Sử dụng <a href="https://github.com" target="_blank">Github</a> hoặc <a href="https://swiftpackageindex.com/" target="_blank">Swift Package Index</a> để tìm kiếm thư viện bên thứ 3.</h2>
+<p class="image-container"><img alt="06_01_1_spm_rss" src="img/8a125d2a82c3c818.png"><img alt="06_01_1_spm_rss" src="img/7de0e87fc57c4019.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tích hợp Swift Package vào Xcode" duration="5">
+        <p class="image-container"><img alt="06_02_1_xcode_spm" src="img/a8256954da3b4c12.png"><img alt="06_02_2_xcode_spm" src="img/5116209cef20776a.png"><img alt="06_02_3_xcode_spm" src="img/82959104082afd76.png"><img alt="06_02_4_xcode_spm" src="img/41579ebcb2fa3cbe.png"><img alt="06_02_5_xcode_spm" src="img/8d87d57b0a30913d.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Sử dụng FeedKit để tải RSS Feed từ Internet" duration="10">
+        <h2 is-upgraded>Heading</h2>
+<pre><code>struct ContentView: View {
+    static let feedURL = URL(string: &#34;https://swiftvietnam.com/feed.rss&#34;)!
+
+    @State var newsItems: [NewsItem] = []
+    @State var link: URL? = nil
+
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(newsItems, id: \.self) { item in
+                    Button(action: {
+                        self.link = item.link
+                    }) {
+                        NewsItemView(item: item)
+                    }
+                }
+            }
+            .sheet(item: $link, content: { link in
+                SafariView(url: link)
+            })
+            .navigationTitle(&#34;Swift Việt Nam&#34;)
+            .navigationBarItems(
+                trailing: Button(action: {
+                    self.loadFeed()
+                }) {
+                    Text(&#34;Load&#34;)
+                }
+            )
+        }
+    }
+
+    private func loadFeed() {
+        let parser = FeedParser(URL: Self.feedURL)
+
+        // Parse asynchronously, not to block the UI.
+        parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { result in
+            switch result {
+            case .success(let feed):
+                guard let rssFeed = feed.rssFeed else {
+                    print(&#34;Feed ist empty&#34;)
+                    return
+                }
+                self.parseFeed(rssFeed)
+            case .failure(let error):
+                print(&#34;Error: \(error)&#34;)
+            }
+        }
+    }
+
+    private func parseFeed(_ feed: RSSFeed) {
+        let newsItems = feed.items?.compactMap { rssFeedItem -&gt; NewsItem? in
+            guard let title = rssFeedItem.title,
+                  let link = rssFeedItem.link,
+                  let url = URL(string: link) else {
+                return nil
+            }
+
+            return NewsItem(
+                title: title,
+                link: url
+            )
+        }
+
+        // Go back the the main thread to update the UI.
+        DispatchQueue.main.async {
+            self.newsItems = newsItems ?? []
+        }
+    }
+}
+</code></pre>
+<h2 is-upgraded>Kết quả</h2>
+<p class="image-container"><img alt="06_03_fetch_rss" src="img/a0ccf49667656892.gif"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

@@ -1,12 +1,12 @@
 summary: Swift Việt Nam - Kiểm thử bằng Testflight.
-id: swiftvietnam_08-testing-with-testflight
+id: swiftvietnam_09-testing-with-testflight
 categories: swiftui
 tags: swiftvietnamapp
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 8: Kiểm thử bằng Testflight
+# Swift Việt Nam - Bài 9: Kiểm thử bằng Testflight
 <!-- ------------------------ -->
 ## Overview
 Duration: 1

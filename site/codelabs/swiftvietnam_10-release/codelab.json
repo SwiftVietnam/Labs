@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T01:08:03+08:00",
-  "id": "swiftvietnam_09-release",
+  "updated": "2020-08-27T11:53:50+08:00",
+  "id": "swiftvietnam_10-release",
   "duration": 1,
-  "title": "Swift Việt Nam - Bài 9: Phát hành",
+  "title": "Swift Việt Nam - Bài 10: Phát hành",
   "authors": "An Tran",
   "summary": "Swift Việt Nam - Release.",
-  "source": "swiftvietnam_09-release.md",
+  "source": "swiftvietnam_10-release.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "swiftvietnam_09-release"
+  "url": "swiftvietnam_10-release"
 }

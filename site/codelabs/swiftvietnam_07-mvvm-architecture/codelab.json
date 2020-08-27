@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T01:07:55+08:00",
-  "id": "swiftvietnam_07-testing",
-  "duration": 1,
-  "title": "Swift Việt Nam - Bài 7: Kiểm thử",
+  "updated": "2020-08-27T12:08:21+08:00",
+  "id": "swiftvietnam_07-mvvm-architecture",
+  "duration": 6,
+  "title": "Swift Việt Nam - Bài 7: Kiến trúc MVVM",
   "authors": "An Tran",
-  "summary": "Swift Việt Nam - Kiểm thử.",
-  "source": "swiftvietnam_07-testing.md",
+  "summary": "Swift Việt Nam - Kiến trúc MVVM.",
+  "source": "swiftvietnam_07-mvvm-architecture.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "swiftvietnam_07-testing"
+  "url": "swiftvietnam_07-mvvm-architecture"
 }

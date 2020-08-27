@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T01:07:59+08:00",
-  "id": "swiftvietnam_08-testing-with-testflight",
+  "updated": "2020-08-27T12:08:32+08:00",
+  "id": "swiftvietnam_09-testing-with-testflight",
   "duration": 1,
-  "title": "Swift Việt Nam - Bài 8: Kiểm thử bằng Testflight",
+  "title": "Swift Việt Nam - Bài 9: Kiểm thử bằng Testflight",
   "authors": "An Tran",
   "summary": "Swift Việt Nam - Kiểm thử bằng Testflight.",
-  "source": "swiftvietnam_08-testing-with-testflight.md",
+  "source": "swiftvietnam_09-testing-with-testflight.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "swiftvietnam_08-testing-with-testflight"
+  "url": "swiftvietnam_09-testing-with-testflight"
 }

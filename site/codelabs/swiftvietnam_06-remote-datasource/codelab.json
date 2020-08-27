@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-08-27T15:37:52+08:00",
+  "id": "swiftvietnam_06-remote-datasource",
+  "duration": 26,
+  "title": "Swift Việt Nam - Bài 6: Lấy dữ liệu từ RSS Feed",
+  "authors": "An Tran",
+  "summary": "Swift Việt Nam - Remote Datasource.",
+  "source": "swiftvietnam_06-remote-datasource.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "swiftui"
+  ],
+  "tags": [
+    "swiftvietnamapp"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "swiftvietnam_06-remote-datasource"
+}
