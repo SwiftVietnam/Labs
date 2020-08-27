@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 3: Basic Styling
+# Swift Việt Nam - Bài 03: Basic Styling
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1

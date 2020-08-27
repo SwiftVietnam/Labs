@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 4: Data Structure
+# Swift Việt Nam - Bài 04: Data Structure
 <!-- ------------------------ -->
 ## Overview
 Duration: 1
