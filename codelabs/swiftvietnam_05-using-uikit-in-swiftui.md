@@ -12,33 +12,127 @@ Feedback Link: https://swiftvietnam.com
 Duration: 1
 
 ### Bạn sẽ học gì?
-- Integrate UIKit components into SwiftUI apps
+- Tích hợp UIKit vào SwiftUI
+- Mở một `View` khác chồng lên `View` hiện tại
 
 <!-- ------------------------ -->
-## Creating `NewsItem` 
-Duration: 3
+## `SafariView` 
+Duration: 5
+
+### Tích hợp SFSafariViewController vào SafariView 
 
 ```swift
-// In ContentView.swift
+import Foundation
+import SwiftUI
+import SafariServices
+
+struct SafariView: UIViewControllerRepresentable {
+
+    let url: URL
+
+    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController {
+        return SFSafariViewController(url: url)
+    }
+
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {
+    }
+}
+```
+
+<!-- ------------------------ -->
+## Lưu liên kết khi
+Duration: 5
+
+### Thêm biến `link` để lưu liên kết
+
+```swift
+@State var link: URL? = nil
+```
+
+### Thêm `Button` vào `NewsItemView` 
+
+```swift
+// ContentView.swift
+List {
+    ForEach(newsItems, id: \.self) { item in
+        Button(action: {
+            self.link = item.link
+        }) {
+            NewsItemView(item: item)
+        }
+    }
+}
+```
+
+### Toàn bộ mã nguồn `ContentView`
+
+```swift
+//
+//  Copyright by An Tran.
+//
+
+import SwiftUI
 
 struct NewsItem: Hashable {
     let title: String
+    let link: URL
+}
+
+extension URL: Identifiable {
+    public var id: String {
+        self.absoluteString
+    }
 }
 
 struct ContentView: View {
-    let newsItems = [
-        NewsItem(title: "Bản tin Swift #5"),
-        NewsItem(title: "Bản tin Swift #4"),
-        NewsItem(title: "Bản tin Swift #3"),
-        NewsItem(title: "Bản tin Swift #2"),
-        NewsItem(title: "Bản tin Swift #1")
-    ]
+    @State var newsItems: [NewsItem] = []
+    @State var link: URL? = nil
 
     var body: some View {
-        List {
-            ForEach(newsItems, id: \.self) { item in
-                NewsItemView(item: item)
+        NavigationView {
+            List {
+                ForEach(newsItems, id: \.self) { item in
+                    Button(action: {
+                        self.link = item.link
+                    }) {
+                        NewsItemView(item: item)
+                    }
+                }
             }
+            .sheet(item: $link, content: { link in
+                SafariView(url: link)
+            })
+            .navigationTitle("Swift Việt Nam")
+            .navigationBarItems(
+                trailing: Button(action: {
+                    self.newsItems = [
+                        NewsItem(
+                            title: "Bản tin Swift #5",
+                            link: URL(string: "https://swiftvietnam.com/posts/2020-06-17_ban_tin_swift_vietnam_so_5/")!
+                        ),
+                        NewsItem(
+                            title: "Bản tin Swift #4",
+                            link: URL(string: "https://swiftvietnam.com/posts/2020-06-10_ban_tin_swift_vietnam_so_4/")!
+                        ),
+                        NewsItem(
+                            title: "Bản tin Swift #3",
+                            link: URL(string: "https://swiftvietnam.com/posts/2020-06-03_ban_tin_swift_vietnam_so_3/")!
+                        ),
+                        NewsItem(
+                            title: "Bản tin Swift #2",
+                            link: URL(string: "https://swiftvietnam.com/posts/2020-05-27_ban_tin_swift_vietnam_so_2/")!
+
+                        ),
+                        NewsItem(
+                            title: "Bản tin Swift #1",
+                            link: URL(string: "https://swiftvietnam.com/posts/2020-05-20_ban_tin_swift_vietnam_so_1/")!
+
+                        )
+                    ]
+                }) {
+                    Text("Load")
+                }
+            )
         }
     }
 }
@@ -51,54 +145,16 @@ struct NewsItemView: View {
             .font(.headline)
     }
 }
-```
-### Kết quả
 
-![04_01_creating_newsitem](assets/04/04_01_creating_newsitem.png)
-
-<!-- ------------------------ -->
-## Make list of news items dynamic 
-Duration: 3
-
-### Using `@State` to define a dynamic variable
-
-```swift
-struct ContentView: View {
-    @State var newsItems: [NewsItem] = []
-
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(newsItems, id: \.self) { item in
-                    NewsItemView(item: item)
-                }
-            }
-            .navigationTitle("Swift Việt Nam")
-            .navigationBarItems(
-                trailing: Button(action: {
-                    self.newsItems = [
-                        NewsItem(title: "Bản tin Swift #5"),
-                        NewsItem(title: "Bản tin Swift #4"),
-                        NewsItem(title: "Bản tin Swift #3"),
-                        NewsItem(title: "Bản tin Swift #2"),
-                        NewsItem(title: "Bản tin Swift #1")
-                    ]
-                }) {
-                    Text("Load")
-                }
-            )
-        }
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
-
+#endif
 ```
-
-![04_02_loading_button](assets/04/04_02_loading_button.png)
 
 ### Kết quả
 
-![04_02_loading_button](assets/04/04_02_loading_button.gif)
-
-<!-- ------------------------ -->
-## Extend `NewsItem` to have `link` property
-Duration: 3
+![05_01_opening_safariview](assets/05/05_01_opening_safariview.gif)

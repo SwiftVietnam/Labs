@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-08-27T12:05:45+08:00",
-  "id": "swiftvietnam_05-using-uikit",
-  "duration": 11,
-  "title": "Swift Việt Nam - Bài 5: Using UIKit",
+  "updated": "2020-08-27T12:08:37+08:00",
+  "id": "swiftvietnam_08-testing",
+  "duration": 1,
+  "title": "Swift Việt Nam - Bài 8: Kiểm thử",
   "authors": "An Tran",
-  "summary": "Swift Việt Nam - Using UIKit.",
-  "source": "swiftvietnam_05-using-uikit-in-swiftui.md",
+  "summary": "Swift Việt Nam - Kiểm thử.",
+  "source": "swiftvietnam_08-testing.md",
   "theme": "",
   "status": [
     "published"
@@ -21,5 +21,5 @@
     "swiftvietnamapp"
   ],
   "feedback": "https://swiftvietnam.com",
-  "url": "swiftvietnam_05-using-uikit"
+  "url": "swiftvietnam_08-testing"
 }
