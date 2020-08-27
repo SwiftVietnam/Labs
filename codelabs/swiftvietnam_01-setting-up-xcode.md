@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 1: Setting up Xcode
+# Swift Việt Nam - Bài 01: Setting up Xcode
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1

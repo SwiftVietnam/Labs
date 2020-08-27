@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 2: Xin chào SwiftUI
+# Swift Việt Nam - Bài 02: Xin chào SwiftUI
 <!-- ------------------------ -->
 ## Overview 
 Duration: 1

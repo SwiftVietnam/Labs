@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>Swift Việt Nam - Bài 7: Kiến trúc MVVM</title>
+  <title>Swift Việt Nam - Bài 07: Kiến trúc MVVM</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -23,7 +23,7 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="swiftvietnam_07-mvvm-architecture"
-                  title="Swift Việt Nam - Bài 7: Kiến trúc MVVM"
+                  title="Swift Việt Nam - Bài 07: Kiến trúc MVVM"
                   environment="web"
                   feedback-link="https://swiftvietnam.com">
     
@@ -39,7 +39,96 @@
     
       <google-codelab-step label="Tạo 
 ViewModel" duration="5">
-        <h2 is-upgraded>Heading</h2>
+        <pre><code>struct ContentView: View {
+
+    class ViewModel: ObservableObject {
+        static let feedURL = URL(string: &#34;https://swiftvietnam.com/feed.rss&#34;)!
+
+        @Published private(set) var newsItems: [NewsItem] = []
+        @Published private(set) var link: URL? = nil
+
+        func select(_ link: URL?) {
+            self.link = link
+        }
+
+        func loadFeed() {
+            let parser = FeedParser(URL: Self.feedURL)
+
+            // Parse asynchronously, not to block the UI.
+            parser.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { result in
+                switch result {
+                case .success(let feed):
+                    guard let rssFeed = feed.rssFeed else {
+                        print(&#34;Feed ist empty&#34;)
+                        return
+                    }
+                    self.parseFeed(rssFeed)
+                case .failure(let error):
+                    print(&#34;Error: \(error)&#34;)
+                }
+            }
+        }
+
+        private func parseFeed(_ feed: RSSFeed) {
+            let newsItems = feed.items?.compactMap { rssFeedItem -&gt; NewsItem? in
+                guard let title = rssFeedItem.title,
+                      let link = rssFeedItem.link,
+                      let url = URL(string: link) else {
+                    return nil
+                }
+
+                return NewsItem(
+                    title: title,
+                    link: url
+                )
+            }
+
+            // Go back the the main thread to update the UI.
+            DispatchQueue.main.async {
+                self.newsItems = newsItems ?? []
+            }
+        }
+    }
+
+    @ObservedObject private var viewModel = ViewModel()
+
+    init() {
+        viewModel.loadFeed()
+    }
+
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(viewModel.newsItems, id: \.self) { item in
+                    Button(action: {
+                        viewModel.select(item.link)
+                    }) {
+                        NewsItemView(item: item)
+                    }
+                }
+            }
+            .sheet(item: .init(
+                get: {
+                    viewModel.link
+                },
+                set: {
+                    viewModel.select($0)
+                }
+            ), content: { link in
+                SafariView(url: link)
+            })
+            .navigationTitle(&#34;Swift Việt Nam&#34;)
+            .navigationBarItems(
+                trailing: Button(action: {
+                    viewModel.loadFeed()
+                }) {
+                    Text(&#34;Load&#34;)
+                }
+            )
+        }
+    }
+}
+</code></pre>
 
 
       </google-codelab-step>

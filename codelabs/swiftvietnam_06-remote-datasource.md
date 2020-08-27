@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 6: Lấy dữ liệu từ RSS Feed
+# Swift Việt Nam - Bài 06: Lấy dữ liệu từ RSS Feed
 <!-- ------------------------ -->
 ## Overview
 Duration: 1

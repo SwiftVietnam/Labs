@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 8: Kiểm thử
+# Swift Việt Nam - Bài 08: Kiểm thử
 <!-- ------------------------ -->
 ## Overview
 Duration: 1

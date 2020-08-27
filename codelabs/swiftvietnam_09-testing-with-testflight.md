@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 9: Kiểm thử bằng Testflight
+# Swift Việt Nam - Bài 09: Kiểm thử bằng Testflight
 <!-- ------------------------ -->
 ## Overview
 Duration: 1
