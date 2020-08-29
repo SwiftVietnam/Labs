@@ -104,11 +104,19 @@ Duration: 5
 
 - Gửi Testflight build đến Internal Testers
 
-<!-- ------------------------ -->
-## Gửi Testflight build đến External Testers
-Duration: 5
-
 ![09_10_01_test_detail](assets/09/09_10_01_test_detail.png)
 ![09_10_02_add_internal_testers](assets/09/09_10_02_add_internal_testers.png)
 ![09_10_03_choose_internal_tester](assets/09/09_10_03_choose_internal_tester.png)
 ![09_10_04_successfully](assets/09/09_10_04_successfully.png)
+
+<!-- ------------------------ -->
+## Gửi Testflight build đến External Testers
+Duration: 5
+
+![09_11_01_add_external_group](assets/09/09_11_01_add_external_group.png)
+![09_11_02_add_external_group](assets/09/09_11_02_add_external_group.png)
+![09_11_03_add_build](assets/09/09_11_03_add_build.png)
+![09_11_04_choose_build](assets/09/09_11_04_choose_build.png)
+![09_11_05_require_signin](assets/09/09_11_05_require_signin.png)
+![09_11_06_what_to_test](assets/09/09_11_06_what_to_test.png)
+![09_11_07_add_build_successfully](assets/09/09_11_07_add_build_successfully.png)
