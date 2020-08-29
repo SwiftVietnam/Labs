@@ -40,7 +40,7 @@ struct SafariView: UIViewControllerRepresentable {
 ```
 
 <!-- ------------------------ -->
-## Lưu liên kết khi
+## Lưu liên kết
 Duration: 5
 
 ### Thêm biến `link` để lưu liên kết
@@ -67,10 +67,6 @@ List {
 ### Toàn bộ mã nguồn `ContentView`
 
 ```swift
-//
-//  Copyright by An Tran.
-//
-
 import SwiftUI
 
 struct NewsItem: Hashable {

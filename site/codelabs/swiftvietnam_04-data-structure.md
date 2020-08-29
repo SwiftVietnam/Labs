@@ -1,4 +1,4 @@
-summary: Swift Việt Nam - Data structure.
+summary: Swift Việt Nam - Cấu trúc dữ liệu.
 id: swiftvietnam_04-data-structure
 categories: swiftui
 tags: swiftvietnamapp
@@ -6,14 +6,14 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 04: Data Structure
+# Swift Việt Nam - Bài 04: Cấu trúc dữ liệu
 <!-- ------------------------ -->
 ## Overview
 Duration: 1
 
 ### Bạn sẽ học gì?
-- Creating data structures
-- Adding properties to Item
+- Tạo cấu trúc dữ liệu
+- Thêm property vào `Item`
 - Making a SwiftUI view dynamic
 
 <!-- ------------------------ -->

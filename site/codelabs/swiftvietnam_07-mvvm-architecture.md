@@ -19,8 +19,11 @@ Duration: 1
 ## Kiến trúc MVVM là gì? 
 Duration: 5
 
-Apple cũng khuyến khích kiến trúc MVVM cho SwiftUI.
-![07_01-07_02-mvvm-swiftui-pattern](assets/07/07_01-07_02-mvvm-swiftui-pattern.png) 
+- MVVM
+![07_01_mvvm_pattern](assets/07/07_01_mvvm_pattern.png) 
+
+- Apple cũng khuyến khích kiến trúc MVVM cho SwiftUI.
+![07_02_mvvm_swiftui](assets/07/07_02_mvvm_swiftui.png) 
 
 <!-- ------------------------ -->
 ## Tạo `ViewModel`
