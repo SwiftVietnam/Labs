@@ -16,6 +16,13 @@ Duration: 1
 - Tích hợp Swift Package Manager
 
 <!-- ------------------------ -->
+## Kiến trúc MVVM là gì? 
+Duration: 5
+
+Apple cũng khuyến khích kiến trúc MVVM cho SwiftUI.
+![07_01-07_02-mvvm-swiftui-pattern](assets/07/07_01-07_02-mvvm-swiftui-pattern.png) 
+
+<!-- ------------------------ -->
 ## Tạo `ViewModel`
 Duration: 5
 

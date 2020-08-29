@@ -12,7 +12,14 @@ Feedback Link: https://swiftvietnam.com
 Duration: 1
 
 ### Bạn sẽ học gì?
-- Viết Unit Tests
 - Viết UI Tests
-- Viết Snapshot Tests
 
+<!-- ------------------------ -->
+## Thu UI Tests 
+Duration: 5
+
+<!-- ------------------------ -->
+## Chạy UI Tests
+Duration: 5
+
+![08_01_uitest](assets/08/08_01_uitest.gif) 
