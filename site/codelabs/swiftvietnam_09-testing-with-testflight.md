@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Kiểm thử bằng Testflight.
 id: swiftvietnam_09-testing-with-testflight
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran

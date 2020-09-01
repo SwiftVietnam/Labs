@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Kiến trúc MVVM.
 id: swiftvietnam_07-mvvm-architecture
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran

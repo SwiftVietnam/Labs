@@ -6,16 +6,28 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Package Manager Modularisation
+# Mô-đun hoá ứng dụng bằng Swift Package Manager
 <!-- ------------------------ -->
-## Overview 
-Duration: 1
+## Giới thiệu chung 
+Duration: 5
+
+### Lời nói đầu
+
+Swift Package Manager (SPM) đang dần có thể thay thế hoàn toàn Cocoapods hay Carthage để quản lý các thư viện phụ thuộc cho một ứng dụng iOS.
+
+Bài viết này sẽ giới thiệu một ứng dụng mẫu sử dụng SPM để quản lý các thư viện tự phát triển. 
+
+Việc phân chia mã nguồn ra các package khác nhau có nhiều lợi thế
+- Các package có thể được phát triển, xây dựng và kiểm thử độc lập nhanh hơn.
+- Giúp phân chia mã nguồn theo từng chức năng nhất định, hỗ trợ cho việc thiết kế một cấu trúc ứng dụng scalable.
+- Các package có thể được chia sẻ giữa các dự án khác nhau.
 
 ### Bạn sẽ học gì?
+
 - Khởi tạo một Swift Package.
-- Quản lý dependency giữa các Swift Package.
+- Quản lý liên kết phụ thuộc giữa các Swift Package.
 - Tích hợp Swift Package vào một ứng dụng.
-- Việt và chạy tests cho một Swift Package.
+- Viết và chạy tests cho một Swift Package.
 - Quản lý ứng dụng và Swift Package trong cùng một Workspace.
 
 <!-- ------------------------ -->

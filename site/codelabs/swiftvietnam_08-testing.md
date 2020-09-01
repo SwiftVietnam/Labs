@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Kiểm thử.
 id: swiftvietnam_08-testing
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran

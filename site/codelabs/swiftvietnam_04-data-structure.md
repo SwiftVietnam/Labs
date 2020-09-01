@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Cấu trúc dữ liệu.
 id: swiftvietnam_04-data-structure
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran

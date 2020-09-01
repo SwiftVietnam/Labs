@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-01T23:52:44+08:00",
+  "id": "swiftvietnam_00-swiftui-from-scratch",
+  "duration": 5,
+  "title": "Swift Việt Nam - Lời nói đầu",
+  "authors": "An Tran",
+  "summary": "Swift Việt Nam - Tạo một ứng dụng SwiftUI từ đầu đến App Store.",
+  "source": "swiftvietnam_00-swiftui-from-scratch.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "swiftui"
+  ],
+  "tags": [
+    "swiftvietnamapp"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "swiftvietnam_00-swiftui-from-scratch"
+}

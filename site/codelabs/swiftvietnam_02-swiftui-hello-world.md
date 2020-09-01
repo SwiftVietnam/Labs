@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Hello World SwiftUI.
 id: swiftvietnam_02-swiftui-hello-world
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published 
 authors: An Tran

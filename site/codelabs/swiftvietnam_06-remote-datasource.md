@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Remote Datasource.
 id: swiftvietnam_06-remote-datasource
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran

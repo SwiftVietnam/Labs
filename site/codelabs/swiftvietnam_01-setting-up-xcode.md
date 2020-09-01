@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Setting up Xcode.
 id: swiftvietnam_01-setting-up-xcode
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published 
 authors: An Tran
