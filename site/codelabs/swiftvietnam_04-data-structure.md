@@ -56,7 +56,7 @@ struct NewsItemView: View {
 ```
 ### Kết quả
 
-![04_01_creating_newsitem](assets/04/04_01_creating_newsitem.png)
+![04_01_creating_newsitem](assets/swiftvietnam/04/04_01_creating_newsitem.png)
 
 <!-- ------------------------ -->
 ## Make list of news items dynamic 
@@ -95,11 +95,11 @@ struct ContentView: View {
 
 ```
 
-![04_02_loading_button](assets/04/04_02_loading_button.png)
+![04_02_loading_button](assets/swiftvietnam/04/04_02_loading_button.png)
 
 ### Kết quả
 
-![04_02_loading_button](assets/04/04_02_loading_button.gif)
+![04_02_loading_button](assets/swiftvietnam/04/04_02_loading_button.gif)
 
 <!-- ------------------------ -->
 ## Extend `NewsItem` to have `link` property

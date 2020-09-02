@@ -153,4 +153,4 @@ struct ContentView_Previews: PreviewProvider {
 
 ### Kết quả
 
-![05_01_opening_safariview](assets/05/05_01_opening_safariview.gif)
+![05_01_opening_safariview](assets/swiftvietnam/05/05_01_opening_safariview.gif)

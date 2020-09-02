@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-09-01T23:52:33+08:00",
+  "updated": "2020-09-02T08:56:22+08:00",
   "id": "swiftvietnam_01-setting-up-xcode",
   "duration": 9,
   "title": "Swift Việt Nam - Bài 01: Setting up Xcode",
   "authors": "An Tran",
   "summary": "Swift Việt Nam - Setting up Xcode.",
-  "source": "swiftvietnam_01-setting-up-xcode copy.md",
+  "source": "swiftvietnam_01-setting-up-xcode.md",
   "theme": "",
   "status": [
     "published"

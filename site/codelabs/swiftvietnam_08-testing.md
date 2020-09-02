@@ -22,4 +22,4 @@ Duration: 5
 ## Chạy UI Tests
 Duration: 5
 
-![08_01_uitest](assets/08/08_01_uitest.gif) 
+![08_01_uitest](assets/swiftvietnam/08/08_01_uitest.gif) 

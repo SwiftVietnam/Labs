@@ -20,10 +20,10 @@ Duration: 1
 Duration: 5
 
 - MVVM
-![07_01_mvvm_pattern](assets/07/07_01_mvvm_pattern.png) 
+![07_01_mvvm_pattern](assets/swiftvietnam/07/07_01_mvvm_pattern.png) 
 
 - Apple cũng khuyến khích kiến trúc MVVM cho SwiftUI.
-![07_02_mvvm_swiftui](assets/07/07_02_mvvm_swiftui.png) 
+![07_02_mvvm_swiftui](assets/swiftvietnam/07/07_02_mvvm_swiftui.png) 
 
 <!-- ------------------------ -->
 ## Tạo `ViewModel`

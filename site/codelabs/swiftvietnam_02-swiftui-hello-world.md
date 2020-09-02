@@ -20,12 +20,12 @@ Duration: 1
 Duration: 3
 
 ### Create a SwiftUI project
-![02_01_create_project](assets/02/02_01_create_project.png)
-![02_02_create_project](assets/02/02_02_create_project.png)
+![02_01_create_project](assets/swiftvietnam/02/02_01_create_project.png)
+![02_02_create_project](assets/swiftvietnam/02/02_02_create_project.png)
 
 ### SwiftUI preview panel
-![02_03_create_project](assets/02/02_03_create_project.png)
-![02_04_preview](assets/02/02_04_preview.png)
+![02_03_create_project](assets/swiftvietnam/02/02_03_create_project.png)
+![02_04_preview](assets/swiftvietnam/02/02_04_preview.png)
 
 <!-- ------------------------ -->
 ## Running on a simulator
@@ -41,7 +41,7 @@ struct ContentView: View {
 }
 ```
 
-![02_05_hello_swift_vietnam](assets/02/02_05_hello_swift_vietnam.png)
+![02_05_hello_swift_vietnam](assets/swiftvietnam/02/02_05_hello_swift_vietnam.png)
 
 ### Run app on Simulator
-![02_06_simulator](assets/02/02_06_simulator.png)
+![02_06_simulator](assets/swiftvietnam/02/02_06_simulator.png)
