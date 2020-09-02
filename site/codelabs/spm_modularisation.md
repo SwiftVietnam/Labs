@@ -17,10 +17,10 @@ Swift Package Manager (SPM) đang dần có thể thay thế hoàn toàn Cocoapo
 
 Bài viết này sẽ giới thiệu một ứng dụng mẫu sử dụng SPM để quản lý các thư viện tự phát triển. 
 
-Việc phân chia mã nguồn ra các package khác nhau có nhiều lợi thế
-- Các package có thể được phát triển, xây dựng và kiểm thử độc lập nhanh hơn.
-- Giúp phân chia mã nguồn theo từng chức năng nhất định, hỗ trợ cho việc thiết kế một cấu trúc ứng dụng scalable.
-- Các package có thể được chia sẻ giữa các dự án khác nhau.
+Việc phân chia mã nguồn ra các package khác nhau có nhiều lợi thế:
+- Các packages có thể được phát triển, xây dựng và kiểm thử độc lập nhanh hơn.
+- Giúp phân chia mã nguồn theo từng chức năng nhất định, hỗ trợ cho việc thiết kế một kiến trúc ứng dụng có tính mở rộng cao.
+- Các packages có thể được chia sẻ giữa các dự án khác nhau.
 
 ### Bạn sẽ học gì?
 
@@ -76,8 +76,9 @@ let package = Package(
 
 ### Thêm `uppercased` property
 
-`Common.swift`
 ```swift
+// Common.swift
+
 import Foundation
 
 extension String {
@@ -99,8 +100,9 @@ Duration: 5
 
 ### Thêm `Common` là dependency của `Core`
 
-`Package.swift`
 ```swift
+// Package.swift
+
 // swift-tools-version:5.2
 import PackageDescription
 
@@ -130,8 +132,9 @@ let package = Package(
 
 ### Thêm `StringService`
 
-`StringService.swift`
 ```swift
+// StringService.swift
+
 import Foundation
 import Common
 
@@ -157,8 +160,9 @@ public class StringService {
 
 ### Thêm lớp `Core`
 
-`Core.swift`
 ```swift
+// Core.swift
+
 import Foundation
 
 public class Core {
@@ -207,7 +211,10 @@ final class CommonTests: XCTestCase {
 ```
 
 ### Thêm tests cho `Core` package
+
 ```swift
+// CoreTests.swift
+
 import XCTest
 @testable import Core
 
@@ -243,6 +250,8 @@ Duration: 10
 ### Thêm chức năng
 
 ```swift
+// ViewController.swift
+
 import UIKit
 import Core
 
@@ -273,6 +282,8 @@ Duration: 5
 ### Thêm UI Test 
 
 ```swift
+// SPMSampleAppUITests.swift
+
 import XCTest
 
 class SPMSampleAppUITests: XCTestCase {
@@ -299,3 +310,18 @@ class SPMSampleAppUITests: XCTestCase {
 ### Chạy test
 
 ![07_uitest](assets/spm_modularisation/07_uitest.gif) 
+
+<!-- ------------------------ -->
+## Lời kết 
+Duration: 5
+
+### Lợi ích
+
+- Việc phân chia nhỏ mã nguồn thành từng Swift Package giúp cho việc quản lý và bảo trì dự án tốt hơn.
+- Tăng tốc xây dựng dự án vì các packages có thể dược xây dựng và kiểm thử độc lập với nhau.
+- Việc phân chia packages buộc lập trình viên phải định nghĩa các API cho mỗi package một cách rõ ràng, từ đó một cách gián tiếp nâng cao chất lượng mã nguồn.
+- Các packages có thể được chia sẻ một cách dễ dàng giữa nhiều ứng dụng khác nhau.
+
+### Mã nguồn
+
+- Tham khảo mã nguồn của dự án mẫu [tại đây](https://github.com/SwiftVietnam/Samples/tree/master/SPMSample) 

@@ -31,11 +31,11 @@
         <h2 is-upgraded>Lời nói đầu</h2>
 <p>Swift Package Manager (SPM) đang dần có thể thay thế hoàn toàn Cocoapods hay Carthage để quản lý các thư viện phụ thuộc cho một ứng dụng iOS.</p>
 <p>Bài viết này sẽ giới thiệu một ứng dụng mẫu sử dụng SPM để quản lý các thư viện tự phát triển.</p>
-<p>Việc phân chia mã nguồn ra các package khác nhau có nhiều lợi thế</p>
+<p>Việc phân chia mã nguồn ra các package khác nhau có nhiều lợi thế:</p>
 <ul>
-<li>Các package có thể được phát triển, xây dựng và kiểm thử độc lập nhanh hơn.</li>
-<li>Giúp phân chia mã nguồn theo từng chức năng nhất định, hỗ trợ cho việc thiết kế một cấu trúc ứng dụng scalable.</li>
-<li>Các package có thể được chia sẻ giữa các dự án khác nhau.</li>
+<li>Các packages có thể được phát triển, xây dựng và kiểm thử độc lập nhanh hơn.</li>
+<li>Giúp phân chia mã nguồn theo từng chức năng nhất định, hỗ trợ cho việc thiết kế một kiến trúc ứng dụng có tính mở rộng cao.</li>
+<li>Các packages có thể được chia sẻ giữa các dự án khác nhau.</li>
 </ul>
 <h2 is-upgraded>Bạn sẽ học gì?</h2>
 <ul>
@@ -83,8 +83,9 @@ let package = Package(
 )
 </code></pre>
 <h2 is-upgraded>Thêm <code>uppercased</code> property</h2>
-<p><code>Common.swift</code></p>
-<pre><code>import Foundation
+<pre><code>// Common.swift
+
+import Foundation
 
 extension String {
 
@@ -103,8 +104,9 @@ Core package" duration="5">
         <h2 is-upgraded>Khởi tạo <code>Core</code> package</h2>
 <p class="image-container"><img alt="03_01_add_core_package" src="img/a0bbc387973eeefd.png"></p>
 <h2 is-upgraded>Thêm <code>Common</code> là dependency của <code>Core</code></h2>
-<p><code>Package.swift</code></p>
-<pre><code>// swift-tools-version:5.2
+<pre><code>// Package.swift
+
+// swift-tools-version:5.2
 import PackageDescription
 
 let package = Package(
@@ -130,8 +132,9 @@ let package = Package(
 </code></pre>
 <p class="image-container"><img alt="03_02_add_core_package" src="img/f3e80ee99986ad97.png"></p>
 <h2 is-upgraded>Thêm <code>StringService</code></h2>
-<p><code>StringService.swift</code></p>
-<pre><code>import Foundation
+<pre><code>// StringService.swift
+
+import Foundation
 import Common
 
 public class StringService {
@@ -153,8 +156,9 @@ public class StringService {
 </code></pre>
 <p class="image-container"><img alt="03_03_add_stringservice" src="img/2617892ede875fb9.png"></p>
 <h2 is-upgraded>Thêm lớp <code>Core</code></h2>
-<p><code>Core.swift</code></p>
-<pre><code>import Foundation
+<pre><code>// Core.swift
+
+import Foundation
 
 public class Core {
     public let stringService: StringService
@@ -196,7 +200,9 @@ final class CommonTests: XCTestCase {
 }
 </code></pre>
 <h2 is-upgraded>Thêm tests cho <code>Core</code> package</h2>
-<pre><code>import XCTest
+<pre><code>// CoreTests.swift
+
+import XCTest
 @testable import Core
 
 final class CoreTests: XCTestCase {
@@ -222,7 +228,9 @@ final class CoreTests: XCTestCase {
         <h2 is-upgraded>Chỉnh sửa UI</h2>
 <p class="image-container"><img alt="06_app" src="img/efc1305efa2e319b.png"><img alt="06_app" src="img/91beae48e6af690e.png"></p>
 <h2 is-upgraded>Thêm chức năng</h2>
-<pre><code>import UIKit
+<pre><code>// ViewController.swift
+
+import UIKit
 import Core
 
 class ViewController: UIViewController {
@@ -250,7 +258,9 @@ class ViewController: UIViewController {
     
       <google-codelab-step label="Thêm UI Test cho ứng dụng" duration="5">
         <h2 is-upgraded>Thêm UI Test</h2>
-<pre><code>import XCTest
+<pre><code>// SPMSampleAppUITests.swift
+
+import XCTest
 
 class SPMSampleAppUITests: XCTestCase {
 
@@ -274,6 +284,22 @@ class SPMSampleAppUITests: XCTestCase {
 </code></pre>
 <h2 is-upgraded>Chạy test</h2>
 <p class="image-container"><img alt="07_uitest" src="img/9d91550eabaed7d6.gif"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Lời kết" duration="5">
+        <h2 is-upgraded>Lợi ích</h2>
+<ul>
+<li>Việc phân chia nhỏ mã nguồn thành từng Swift Package giúp cho việc quản lý và bảo trì dự án tốt hơn.</li>
+<li>Tăng tốc xây dựng dự án vì các packages có thể dược xây dựng và kiểm thử độc lập với nhau.</li>
+<li>Việc phân chia packages buộc lập trình viên phải định nghĩa các API cho mỗi package một cách rõ ràng, từ đó một cách gián tiếp nâng cao chất lượng mã nguồn.</li>
+<li>Các packages có thể được chia sẻ một cách dễ dàng giữa nhiều ứng dụng khác nhau.</li>
+</ul>
+<h2 is-upgraded>Mã nguồn</h2>
+<ul>
+<li>Tham khảo mã nguồn của dự án mẫu <a href="https://github.com/SwiftVietnam/Samples/tree/master/SPMSample" target="_blank">tại đây</a></li>
+</ul>
 
 
       </google-codelab-step>
