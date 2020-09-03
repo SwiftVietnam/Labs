@@ -6,7 +6,7 @@ status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Lời nói đầu
+# Swift Việt Nam - Bài 00: Lời nói đầu
 <!-- ------------------------ -->
 ## Giới thiệu chung 
 Duration: 5
