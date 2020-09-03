@@ -120,3 +120,22 @@ Duration: 5
 ![09_11_05_require_signin](assets/swiftvietnam/09/09_11_05_require_signin.png)
 ![09_11_06_what_to_test](assets/swiftvietnam/09/09_11_06_what_to_test.png)
 ![09_11_07_add_build_successfully](assets/swiftvietnam/09/09_11_07_add_build_successfully.png)
+
+Ứng dụng của chúng ta sẽ được gửi đến đội Review của Apple. thường cho các phiên bản Testflight, chúng ta cần 1 đến 2 ngày chờ đội Review chấp nhận.
+
+- Khi đội Review của Apple chấp nhận phiên bản Testflight, bạn sẽ nhận được email như bên dưới
+![09_11_08_email.png](assets/swiftvietnam/09/09_11_08_email.png)
+
+
+
+<!-- ------------------------ -->
+## Testflight Public Link
+Duration: 5
+
+- Tạo Public Link cho Testflight
+
+![09_12_public_link.png](assets/swiftvietnam/09/09_12_01_public_link.png)
+![09_12_public_link.png](assets/swiftvietnam/09/09_12_02_public_link.png)
+![09_12_public_link.png](assets/swiftvietnam/09/09_12_03_public_link.png)
+
+Đường dẫn đến phiên bản Testflight của SwiftVietnam: [https://testflight.apple.com/join/84qZz1ez](https://testflight.apple.com/join/84qZz1ez)

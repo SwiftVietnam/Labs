@@ -3,13 +3,13 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-09-02T14:37:49+08:00",
+  "updated": "2020-09-02T21:48:29+08:00",
   "id": "swift_solid",
-  "duration": 10,
-  "title": "Interface segregation principle",
+  "duration": 35,
+  "title": "Single Reponsibility Princible - Đơn nhiệm (trách nhiệm duy nhất)",
   "authors": "An Tran",
   "summary": "S.O.L.I.D in Swift",
-  "source": "swift_solid_05_dependency_inversion.md",
+  "source": "swift_solid_01_single_responsibility.md",
   "theme": "",
   "status": [
     "hidden"

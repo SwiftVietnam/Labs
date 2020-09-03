@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-03T11:32:11+08:00",
+  "id": "ios_architectures",
+  "duration": 1,
+  "title": "iOS Application Architecture",
+  "authors": "An Tran",
+  "summary": "iOS Application Architectures",
+  "source": "ios_architectures_01_mvc.md",
+  "theme": "",
+  "status": [
+    "hidden"
+  ],
+  "category": [
+    "architecture"
+  ],
+  "tags": [
+    "architectures"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "ios_architectures"
+}
