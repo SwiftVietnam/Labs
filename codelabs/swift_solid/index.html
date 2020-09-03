@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>Interface segregation principle</title>
+  <title>SOLID với Swift</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -23,21 +23,213 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="swift_solid"
-                  title="Interface segregation principle"
+                  title="SOLID với Swift"
                   environment="web"
                   feedback-link="https://swiftvietnam.com">
     
-      <google-codelab-step label="Định nghĩa" duration="0">
-        <p>Mỗi thành phần hệ thống (class, module, ...) chỉ nên phụ thuộc vào các abstractions, không nên phụ thuộc vào các concretions hoặc implementations cụ thể.</p>
-<h2 is-upgraded>Tại sao cần LSP:</h2>
-<p>Nguyên tắc cũng khá đơn giản về mặt mô hình hoá, bạn hãy tưởng tượng một việc trong thực tế như sau: một hệ thống máy tính sẽ có mainboard là thành phần chính, bộ phận này kết nối các thành phần khác trong hệ thống (như CPU, Ram, ổ cứng, ...) lại với nhau để tạo nên một hệ thống hoạt động hoàn chỉnh và thống nhất. Như bạn đã biết, một mainboard có khả năng kết nối nhiều loại Ram, nhiều loại ổ cứng, ... Dù những nhà sản xuất Ram hay mainboard là độc lập nhau hoàn toàn, và cũng có rất nhiều loại mainboard và ổ cứng khác nhau, nhưng các bộ phận này được kết nối với nhau rất dễ dàng. Làm thế nào để các nhà sản xuất có thể làm được điều này?</p>
-<p>Câu trả lời thực ra rất đơn giản: mọi linh kiện máy tính dù cho có cấu tạo chi tiết khác nhau (implement khác nhau), nhưng luôn giao tiếp với nhau thông qua các chuẩn đã định sẵn (abstraction), cụ thể ở đây là mainboard giao tiếp với ổ đĩa cứng thông qua chuẩn kết nối chung SATA.</p>
+      <google-codelab-step label="Bạn học được gì?" duration="0">
+        <ul>
+<li>SOLID là gì?</li>
+<li>Tại sao cần SOLID?</li>
+</ul>
 
 
       </google-codelab-step>
     
-      <google-codelab-step label="OCP - Case study 1" duration="10">
-        <p>https://nhungdongcodevui.com/2017/04/19/solid-la-gi-nguyen-tac-5-tinh-tuong-thich-dong-dependency-inversion-principle-dip/</p>
+      <google-codelab-step label="SOLID là gì?" duration="5">
+        <p>SOLID là tập hợp 5 nguyên tắc phổ biến trong lập trình hướng đối tượng:</p>
+<ul>
+<li><strong>S</strong>ingle Responsibility Principle</li>
+<li><strong>O</strong>pen/closed Principle</li>
+<li><strong>L</strong>iskov Substitution Principle</li>
+<li><strong>I</strong>nterface Segregation Principle</li>
+<li><strong>D</strong>ependency Inversion Principle</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
+.. thì hãy để cho người khác làm (ví dụ như công ty sẽ thuê người lao công để làm các việc này). Phân công công việc theo chuyên môn như thế vừa giúp bạn tập trung vào công việc để đạt được hiệu quả cao, vừa giúp văn phòng sạch sẽ hơn (vì người lao công sẽ lau dọn sạch hơn bạn ^^).</p>
+<p class="image-container"><img alt="01_why" src="img/38da50e57afb1bee.png"></p>
+<p>Hãy thử xem xét, với quỹ thời gian có hạn trong ngày, một mình bạn vừa phải làm công việc chính để có thu nhập nuôi gia đình, vừa phải lo chăm sóc con nhỏ, cho con bú ... lại phải nấu nướng, giặt giũ, chăm vườn, tưới cây, ... khi đó mặc dù có thể làm được nhiều việc một lúc, nhưng khả năng cao là bạn sẽ chẳng hoàn thành được tốt việc nào cả.</p>
+<p class="image-container"><img alt="01_why" src="img/74f40529b2dcd68f.png"></p>
+<p>Chúng ta cùng nhìn vào con dao &#34;đa năng&#34; ở phía trên. Dao, kéo, mở nút chai... cái gì cũng có, hmm &#34;có vẻ&#34; tiện đấy. Thế nhưng mà to quá, muốn dùng mỗi con dao mà vác cả đống này theo thì hơi mệt. Đặc biệt là nếu 1 cái kìm ở trong này bị hỏng thì tháo nó ra để sửa khá là mệt đấy, chưa kể lúc lắp vào không biết có thừa hay thiếu con vít nào không (yaoming)</p>
+<p>Trong lập trình cũng vậy, một class có quá nhiều chức năng cũng sẽ trở nên cồng kềnh và phức tạp. Với sự phát triển của ứng dụng, các requirement liên tục thay đổi dẫn tới sự thay đổi code. Nếu một class quá nhiều chức năng sẽ khó thay đổi, tốn nhiều thời gian sửa chữa hơn và có thể ảnh hưởng tới các module đang chạy khác.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="SRP - Case study 1" duration="10">
+        <pre><code>class Rectangle {
+    func draw() {}
+    func area() {}
+}
+</code></pre>
+<p>Giả sử có 2 ứng dụng cần sử dụng class Rectangle. Một ứng dụng tính toán, sử dụng function <code>area()</code> để tính diện tích, ứng dụng này không sử dụng đến function <code>draw()</code>. Một ứng dụng đồ họa khác sử dụng function <code>draw()</code> để vẽ hình, ứng dụng này lại không sử dụng function <code>area()</code>.</p>
+<p class="image-container"><img alt="02_rectangle" src="img/f416a96d2c4489d6.png"></p>
+<p>Thiết kế trên đã vi phạm SPR. Class Rectangle đã mang 2 trách nhiệm:</p>
+<p>Trách nhiệm thứ nhất là cung cấp thuật toán để tính toán diện tích Trách nhiệm thứ hai là biểu diễn Rectangle trong giao diện người dùng. Khi một trong 2 ứng dụng yêu cầu thay đổi, chúng ta đều phải thay đổi class Rectangle</p>
+<p>Để giải quyết vấn đề này chúng ta tách function area từ Rectangle ra một class mới GeomatricRectangle, class này sử dụng class Rectangle.</p>
+<pre><code>class GeomatricRectangle
+{
+    public function area();
+}
+</code></pre>
+<p>Ứng dụng tính toán sẽ sử dụng GeomatricRectangle thay cho Rectangle.</p>
+<p class="image-container"><img alt="02_rectangle" src="img/559624f05d9d5f8c.png"></p>
+<p>Với cách thiết kế này, khi yêu cầu của ứng dụng tính diện tích thay đổi sẽ không còn tác động trực tiếp tới class Rectangle và ứng dụng đồ họa thay đổi cũng không ảnh hưởng tưởng tới class GeomatricRectangle.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="SRP - Case study 2" duration="10">
+        <pre><code>class AirConditionerOld {
+    func turnOn() {}
+    func turnOff() {}
+    func changeMode() {}
+    func changeFanSpeed() {}
+}
+````
+
+This AirConditionerOld class violates the Single Responsibility Principle. The responsibilities are:
+- A air conditioner can be Switch On or OFF features.
+- A air conditioner can provide Change Mode features.
+- A air conditioner provides Change Fan Speed features.
+
+We&#39;ve decoupled a air conditioner&#39;s responsibilities into three separate interfaces. This prevents the ‘users&#39; of AirConditionerOld from mixing these responsibilities.
+
+```swift
+protocol SwitchOption {
+    func turnOn()
+    func turnOff()
+}
+
+protocol ModeOption {
+    func changeMode()
+}
+
+protocol FanSpeedOption {
+    func controlWindSpeed()
+}
+</code></pre>
+<pre><code>class Switch: SwitchOption {
+    func turnOn() {
+        print(&#34;Turn on&#34;)
+    }
+
+    func turnOff() {
+        print(&#34;Turn off&#34;)
+    }
+}
+
+class Mode: ModeOption {
+
+}
+
+class FanSpeed: FanSpeedOption {
+
+}
+</code></pre>
+<pre><code>class AirConditionerNew: SwitchOption, ModeOption, FanSpeedOption {
+    let modeController = Mode()
+    let fanspeedController = FanSpeed()
+    let switchController = Switch()
+
+    func turnOn() {
+        switchController.turnOn()        
+    }
+
+    func turnOff() {
+        switchController.turnOff()
+    }
+
+    func changeMode() {
+        modeController.changeMode()
+    }
+
+    func controlWindSpeed() {
+        fanspeedController.controllWindSpeed()
+    }
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="SRP - Case study 3" duration="10">
+        <p>Networking Class</p>
+<ul>
+<li>fetch</li>
+<li>parse</li>
+<li>cache</li>
+</ul>
+<pre><code>class Handler {
+    func handle() {
+        let data = requestDataToAPI()
+        let array = parse(data: data)
+        saveToDB(array: array)
+    }
+    private func requestDataToAPI() -&gt; Data {
+        // send API request and wait the response
+    }
+    private func parse(data: Data) -&gt; [String] {
+        // parse the data and create the array
+    }
+    private func saveToDB(array: [String]) {
+        // save the array in a database (CoreData/Realm/...)
+    }
+}
+</code></pre>
+<p>How many responsibilities does this class have?</p>
+<p>Handler retrieves the data from the API (1), parses the API response, creating an array of String, (2) and saves the array in a database (3).</p>
+<p>Once you consider that you have to use in the same class Alamofire for the API request, ObjectMapper for the parsing and the CoreData stack to save the data in the database, you will start understanding the smell of this class.</p>
+<pre><code>class Handler {
+    let apiHandler: APIHandler
+    let parseHandler: ParseHandler
+    let dbHandler: DBHandler
+    init(apiHandler: APIHandler, parseHandler: ParseHandler, dbHandler: DBHandler) {
+        self.apiHandler = apiHandler
+        self.parseHandler = parseHandler
+        self.dbHandler = dbHandler
+    }
+    func handle() {
+        let data = apiHandler.requestDataToAPI()
+        let array = parseHandler.parse(data: data)
+        dbHandler.saveToDB(array: array)
+    }
+}
+class APIHandler {
+    func requestDataToAPI() -&gt; Data {
+        // send API request and wait the response
+    }
+}
+class ParseHandler {
+    func parse(data: Data) -&gt; [String] {
+        // parse the data and create the array
+    }
+}
+class DBHandler {
+    func saveToDB(array: [String]) {
+        // save the array in a database (CoreData/Realm/...)
+    }
+}
+</code></pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="This principle helps you to keep your classes as clean as possible. Moreover, in the first example you couldn&#39;t test requestDataToAPI, parse and saveToDB directly, since those were private methods. After the refactor, you can easily do it testing APIHandler, ParseHandler and DBHandler." duration="0">
+        <p>https://medium.com/ios-expert-series-or-interview-series/solid-design-principle-using-swift-34bb1731cfb3</p>
 
 
       </google-codelab-step>
