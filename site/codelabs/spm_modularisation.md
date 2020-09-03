@@ -39,15 +39,15 @@ Duration: 5
 ![01_03_creating_an_app](assets/spm_modularisation/01_03_creating_an_app.png) 
 
 <!-- ------------------------ -->
-## `Common` package  
+## Common package  
 Duration: 5
 
-### Khởi tạo `Common` package
+### Khởi tạo **Common** package
 ![02_01_add_common_package](assets/spm_modularisation/02_01_add_common_package.png) 
 ![02_02_add_common_package](assets/spm_modularisation/02_02_add_common_package.png) 
 ![02_02_add_common_package](assets/spm_modularisation/02_02_add_common_package.png) 
 
-### Hiểu `Package.swift`
+### Hiểu **Package.swift**
 
 ```swift
 // swift-tools-version:5.2
@@ -74,7 +74,7 @@ let package = Package(
 )
 ```
 
-### Thêm `uppercased` property
+### Thêm **uppercased** property
 
 ```swift
 // Common.swift
@@ -91,14 +91,14 @@ extension String {
 ```
 
 <!-- ------------------------ -->
-## Create a `Core` package 
+## Core package 
 Duration: 5
 
-### Khởi tạo `Core` package
+### Khởi tạo **Core** package
 
 ![03_01_add_core_package](assets/spm_modularisation/03_01_add_core_package.png) 
 
-### Thêm `Common` là dependency của `Core`
+### Thêm **Common** là dependency của **Core**
 
 ```swift
 // Package.swift
@@ -130,7 +130,7 @@ let package = Package(
 
 ![03_02_add_core_package](assets/spm_modularisation/03_02_add_core_package.png) 
 
-### Thêm `StringService`
+### Thêm **StringService**
 
 ```swift
 // StringService.swift
@@ -158,7 +158,7 @@ public class StringService {
 
 ![03_03_add_stringservice](assets/spm_modularisation/03_03_add_stringservice.png) 
 
-### Thêm lớp `Core`
+### Thêm lớp Core
 
 ```swift
 // Core.swift
@@ -177,7 +177,7 @@ public class Core {
 ![03_04_add_core_class](assets/spm_modularisation/03_04_add_core_class.png) 
 
 <!-- ------------------------ -->
-## Tích hợp `Core` vào ứng dụng
+## Tích hợp Core vào ứng dụng
 Duration: 5
 
 ![04_01_add_core_framework](assets/spm_modularisation/04_01_add_core_framework.png) 
@@ -188,7 +188,7 @@ Duration: 5
 ## Tạo và chạy tests
 Duration: 5 
 
-### Thêm tests cho `Common` package 
+### Thêm tests cho **Common** package 
 Duration: 5 
 
 ```swift
@@ -210,7 +210,7 @@ final class CommonTests: XCTestCase {
 }
 ```
 
-### Thêm tests cho `Core` package
+### Thêm tests cho **Core** package
 
 ```swift
 // CoreTests.swift

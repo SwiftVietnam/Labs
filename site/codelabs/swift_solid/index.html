@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>SOLID với Swift</title>
+  <title>Single Reponsibility Princible - Đơn nhiệm (trách nhiệm duy nhất)</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -23,43 +23,15 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="swift_solid"
-                  title="SOLID với Swift"
+                  title="Single Reponsibility Princible - Đơn nhiệm (trách nhiệm duy nhất)"
                   environment="web"
                   feedback-link="https://swiftvietnam.com">
     
-      <google-codelab-step label="Bạn học được gì?" duration="0">
-        <ul>
-<li>SOLID là gì?</li>
-<li>Tại sao cần SOLID?</li>
-</ul>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="SOLID là gì?" duration="5">
-        <p>SOLID là tập hợp 5 nguyên tắc phổ biến trong lập trình hướng đối tượng:</p>
-<ul>
-<li><strong>S</strong>ingle Responsibility Principle</li>
-<li><strong>O</strong>pen/closed Principle</li>
-<li><strong>L</strong>iskov Substitution Principle</li>
-<li><strong>I</strong>nterface Segregation Principle</li>
-<li><strong>D</strong>ependency Inversion Principle</li>
-</ul>
-
-
-      </google-codelab-step>
-    
-  </google-codelab>
-
-  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
-  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
-  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
-  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
-  <script src="//support.google.com/inapp/api.js"></script>
-
-</body>
-</html>
-.. thì hãy để cho người khác làm (ví dụ như công ty sẽ thuê người lao công để làm các việc này). Phân công công việc theo chuyên môn như thế vừa giúp bạn tập trung vào công việc để đạt được hiệu quả cao, vừa giúp văn phòng sạch sẽ hơn (vì người lao công sẽ lau dọn sạch hơn bạn ^^).</p>
+      <google-codelab-step label="Định nghĩa SRP:" duration="5">
+        <p>&#34;There should never be more than one reason for a class to change.&#34; -SRP: The Single Responsibility Principle</p>
+<p>Nguyên tắc trách nhiệm duy nhất (tiếng Anh: single responsibility) phát biểu rằng mỗi lớp chỉ nên có một trách nhiệm duy nhất, và rằng trách nhiệm đó nên được đóng gói hoàn toàn bởi lớp đó. Tất cả các dịch vụ của lớp đó cần được định hướng chặt chẽ theo trách nhiệm đó. <a href="https://vi.wikipedia.org/wiki/Nguy%C3%AAn_t%E1%BA%AFc_tr%C3%A1ch_nhi%E1%BB%87m_duy_nh%E1%BA%A5t" target="_blank">1</a></p>
+<h2 is-upgraded>Tại sao cần SRP:</h2>
+<p>Để hình dung một cách đơn giản, nếu bạn là một người phát triển phần mềm, thì bạn nên tập trung vào việc viết code và các vấn đề liên quan đến phần mềm, các việc lặt vặt như lau dọn văn phòng, đóng mở cửa văn phòng .v.v.. thì hãy để cho người khác làm (ví dụ như công ty sẽ thuê người lao công để làm các việc này). Phân công công việc theo chuyên môn như thế vừa giúp bạn tập trung vào công việc để đạt được hiệu quả cao, vừa giúp văn phòng sạch sẽ hơn (vì người lao công sẽ lau dọn sạch hơn bạn ^^).</p>
 <p class="image-container"><img alt="01_why" src="img/38da50e57afb1bee.png"></p>
 <p>Hãy thử xem xét, với quỹ thời gian có hạn trong ngày, một mình bạn vừa phải làm công việc chính để có thu nhập nuôi gia đình, vừa phải lo chăm sóc con nhỏ, cho con bú ... lại phải nấu nướng, giặt giũ, chăm vườn, tưới cây, ... khi đó mặc dù có thể làm được nhiều việc một lúc, nhưng khả năng cao là bạn sẽ chẳng hoàn thành được tốt việc nào cả.</p>
 <p class="image-container"><img alt="01_why" src="img/74f40529b2dcd68f.png"></p>
