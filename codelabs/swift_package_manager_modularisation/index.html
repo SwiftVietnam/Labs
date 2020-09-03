@@ -56,9 +56,9 @@
       </google-codelab-step>
     
       <google-codelab-step label="Common package" duration="5">
-        <h2 is-upgraded>Khởi tạo <code>Common</code> package</h2>
+        <h2 is-upgraded>Khởi tạo <strong>Common</strong> package</h2>
 <p class="image-container"><img alt="02_01_add_common_package" src="img/98eb66d263fea627.png"><img alt="02_02_add_common_package" src="img/f3e88a1104523cba.png"><img alt="02_02_add_common_package" src="img/f3e88a1104523cba.png"></p>
-<h2 is-upgraded>Hiểu <code>Package.swift</code></h2>
+<h2 is-upgraded>Hiểu <strong>Package.swift</strong></h2>
 <pre><code>// swift-tools-version:5.2
 import PackageDescription
 
@@ -82,7 +82,7 @@ let package = Package(
     ]
 )
 </code></pre>
-<h2 is-upgraded>Thêm <code>uppercased</code> property</h2>
+<h2 is-upgraded>Thêm <strong>uppercased</strong> property</h2>
 <pre><code>// Common.swift
 
 import Foundation
@@ -99,11 +99,10 @@ extension String {
 
       </google-codelab-step>
     
-      <google-codelab-step label="Create a 
-Core package" duration="5">
-        <h2 is-upgraded>Khởi tạo <code>Core</code> package</h2>
+      <google-codelab-step label="Core package" duration="5">
+        <h2 is-upgraded>Khởi tạo <strong>Core</strong> package</h2>
 <p class="image-container"><img alt="03_01_add_core_package" src="img/a0bbc387973eeefd.png"></p>
-<h2 is-upgraded>Thêm <code>Common</code> là dependency của <code>Core</code></h2>
+<h2 is-upgraded>Thêm <strong>Common</strong> là dependency của <strong>Core</strong></h2>
 <pre><code>// Package.swift
 
 // swift-tools-version:5.2
@@ -131,7 +130,7 @@ let package = Package(
 )
 </code></pre>
 <p class="image-container"><img alt="03_02_add_core_package" src="img/f3e80ee99986ad97.png"></p>
-<h2 is-upgraded>Thêm <code>StringService</code></h2>
+<h2 is-upgraded>Thêm <strong>StringService</strong></h2>
 <pre><code>// StringService.swift
 
 import Foundation
@@ -155,7 +154,7 @@ public class StringService {
 }
 </code></pre>
 <p class="image-container"><img alt="03_03_add_stringservice" src="img/2617892ede875fb9.png"></p>
-<h2 is-upgraded>Thêm lớp <code>Core</code></h2>
+<h2 is-upgraded>Thêm lớp Core</h2>
 <pre><code>// Core.swift
 
 import Foundation
@@ -173,15 +172,14 @@ public class Core {
 
       </google-codelab-step>
     
-      <google-codelab-step label="Tích hợp 
-Core vào ứng dụng" duration="5">
+      <google-codelab-step label="Tích hợp Core vào ứng dụng" duration="5">
         <p class="image-container"><img alt="04_01_add_core_framework" src="img/e241936d93b0c233.png"><img alt="04_02_add_core_framework" src="img/bf2afc87994d17dd.png"><img alt="04_03_add_core_framework" src="img/521e6c67da424e5e.png"></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Tạo và chạy tests" duration="5">
-        <h2 is-upgraded>Thêm tests cho <code>Common</code> package</h2>
+        <h2 is-upgraded>Thêm tests cho <strong>Common</strong> package</h2>
 <pre><code>// CommonTests.swift
 
 import XCTest
@@ -199,7 +197,7 @@ final class CommonTests: XCTestCase {
     }
 }
 </code></pre>
-<h2 is-upgraded>Thêm tests cho <code>Core</code> package</h2>
+<h2 is-upgraded>Thêm tests cho <strong>Core</strong> package</h2>
 <pre><code>// CoreTests.swift
 
 import XCTest
