@@ -28,17 +28,16 @@
                   feedback-link="https://swiftvietnam.com">
     
       <google-codelab-step label="Định nghĩa" duration="0">
-        <p>Nếu Interface quá lớn thì nên tách thành các interface nhỏ hơn, với nhiều mục đích cụ thể.</p>
+        <p>Mỗi thành phần hệ thống (class, module, ...) chỉ nên phụ thuộc vào các abstractions, không nên phụ thuộc vào các concretions hoặc implementations cụ thể.</p>
 <h2 is-upgraded>Tại sao cần LSP:</h2>
-<p>Nguyên tắc này khác trực quan trong thực tế, bạn hãy hình dung về việc mua một cái vali để chứa đồ đi chơi xa. Bạn đến cửa hàng thì có hai lựa chọn phù hợp với túi tiền của bạn như hình bên dưới: một cái vali to, hoặc là nhiều cái vali nhỏ. Bạn nghĩ rằng vali càng to thì càng chứa được nhiều đồ, như vậy thì càng tốt, và bạn sắm ngay một chiếc thật to.</p>
-<p>Lần đi chơi thứ nhất, bạn đi 10 ngày, do đó cần mang theo rất nhiều đồ, và cái vali to chứa đủ đồ cần thiết cho 10 ngày. Quá tuyệt vời – bạn nghĩ thầm. Và rồi công việc bận rộn hơn, bạn không còn có nhiều thời gian để đi chơi dài ngày nữa, những lần đi chơi chỉ còn tầm 3 tới 5 ngày, vali thì quá to còn đồ dùng thì lại ít. Và lúc đó, bạn ước rằng mình đã mua 2 cái vali nhỏ thay vì 1 cái to. Bởi vì nếu cần mang nhiều đồ, bạn vẫn có thể mang theo 2 vali, nhưng bạn không thể &#34;cắt nhỏ&#34; cái vali bự ra thành nhiều phần nhỏ hơn được.</p>
-<p>Đó là một ví dụ cho việc chúng ta nên tách nhỏ interface, trong lập trình thì mọi việc cũng khá là tương tự như thế.</p>
+<p>Nguyên tắc cũng khá đơn giản về mặt mô hình hoá, bạn hãy tưởng tượng một việc trong thực tế như sau: một hệ thống máy tính sẽ có mainboard là thành phần chính, bộ phận này kết nối các thành phần khác trong hệ thống (như CPU, Ram, ổ cứng, ...) lại với nhau để tạo nên một hệ thống hoạt động hoàn chỉnh và thống nhất. Như bạn đã biết, một mainboard có khả năng kết nối nhiều loại Ram, nhiều loại ổ cứng, ... Dù những nhà sản xuất Ram hay mainboard là độc lập nhau hoàn toàn, và cũng có rất nhiều loại mainboard và ổ cứng khác nhau, nhưng các bộ phận này được kết nối với nhau rất dễ dàng. Làm thế nào để các nhà sản xuất có thể làm được điều này?</p>
+<p>Câu trả lời thực ra rất đơn giản: mọi linh kiện máy tính dù cho có cấu tạo chi tiết khác nhau (implement khác nhau), nhưng luôn giao tiếp với nhau thông qua các chuẩn đã định sẵn (abstraction), cụ thể ở đây là mainboard giao tiếp với ổ đĩa cứng thông qua chuẩn kết nối chung SATA.</p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="OCP - Case study 1" duration="10">
-        <p>https://nhungdongcodevui.com/2017/04/13/solid-la-gi-nguyen-tac-4-chia-nho-interface-interface-segregation-principle-isp/</p>
+        <p>https://nhungdongcodevui.com/2017/04/19/solid-la-gi-nguyen-tac-5-tinh-tuong-thich-dong-dependency-inversion-principle-dip/</p>
 
 
       </google-codelab-step>
