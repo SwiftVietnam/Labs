@@ -30,11 +30,83 @@
       <google-codelab-step label="Overview" duration="1">
         <h2 is-upgraded>Bạn sẽ học gì?</h2>
 <ul>
+<li>Các bước chuẩn bị</li>
+<li>Archive một phiên bản gửi App Store bằng Xcode</li>
+<li>Chuẩn bị thông tin cho ứng dụng trên Developer Portal và App Store Connect</li>
 <li>Tải app lên App Store Connect bằng Xcode</li>
-<li>Cấu hình fastlane</li>
-<li>Sử dụng fastlane để tạo screenshots</li>
-<li>Sử dụng fastlane để đưa app lên Testflight</li>
 </ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tạo logo" duration="10">
+        <ul>
+<li>Tạo một ảnh logo bằng một ứng dụng đồ hoạ bất kỳ có kích thước 1024x1024 pixel</li>
+<li>Truy cập trang <a href="https://appicon.co/" target="_blank">appicon.co</a> để tự động tạo các icon với các kích thước cần thiết cho Xcode. <img alt="09_01_appicon" src="img/3c29a508ed854cac.png"></li>
+<li>Tải icons về máy, unzip <img alt="09_02_appicon_download" src="img/426a500ca6464f4f.png"></li>
+<li>Copy icon set vừa tạo vào Xcode <img alt="09_03_copy_assets" src="img/9b25b7bd3cefaa7f.gif"></li>
+</ul>
+<h2 is-upgraded>Kết quả</h2>
+<p class="image-container"><img alt="09_04_app_icon" src="img/88e23bbbc66f7b56.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Archive một phiên bản gửi App Store bằng Xcode" duration="5">
+        <ul>
+<li>Chỉnh sửa version number <img alt="09_05_01_app_version" src="img/94cd2f6b4f832c5b.png"></li>
+<li>Chọn <code>Any iOS Device</code><img alt="09_05_02_target_any_device" src="img/5079bdd2f679ceab.png"></li>
+<li>Chạy <code>Archive</code><img alt="09_05_03_archive" src="img/4551fd5337caec9b.png"></li>
+<li>Chạy <code>Archive</code><img alt="09_05_03_archive" src="img/4551fd5337caec9b.png"></li>
+<li>Kết quả <img alt="09_05_04_organizer" src="img/90535cc8460ca0e5.png"></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chuẩn bị thông tin cho ứng dụng trên Developer Portal" duration="10">
+        <ul>
+<li>Truy cập Apple Developer Portal <img alt="09_06_01_developer_portal" src="img/bf1f76bcfc1ad996.png"></li>
+<li>Đăng ký một identifier mới <img alt="09_06_02_register_identifier" src="img/b4103e58c936822e.png"><img alt="09_06_03_choose_app" src="img/5341ce0f81d7447e.png"><img alt="09_06_04_enter_detail" src="img/734db7f992576055.png"><img alt="09_06_05_confirmation" src="img/6cada1e4684573bd.png"><img alt="09_06_06_added_successfully" src="img/16f873f623b0b9a2.png"></li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Chuẩn bị thông tin cho ứng dụng trên App Store Connect" duration="10">
+        <ul>
+<li>Thêm ứng dụng mới</li>
+</ul>
+<p class="image-container"><img alt="09_07_01_add_a_new_app" src="img/f64ff06c136daeb4.png"><img alt="09_07_02_added_succesfully" src="img/acd62c6212ba281a.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Tải ứng dụng lên App Store Connect" duration="5">
+        <ul>
+<li>Tải ứng dụng lên App Store Connect bằng Xcode</li>
+<li>Kiểm tra App Store Connect</li>
+</ul>
+<p class="image-container"><img alt="09_08_02_tesflight_build" src="img/61f60d0d5ed3e85f.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Gửi Testflight build đến Internal Testers" duration="5">
+        <ul>
+<li>Khai báo thông tin về sử dụng mã hoá</li>
+</ul>
+<p class="image-container"><img alt="09_09_01_ecryption" src="img/efa4980175552f3e.png"><img alt="09_09_02_ecryption" src="img/242e5bd335512f1e.png"><img alt="09_09_03_ecryption" src="img/25d97a2dcd17f10.png"><img alt="09_09_04_ecryption" src="img/9bcb63f877943c47.png"><img alt="09_09_05_ecryption" src="img/1aa5b2234888be98.png"><img alt="09_09_06_ready_to_submit" src="img/940787ab36f2e0df.png"></p>
+<ul>
+<li>Gửi Testflight build đến Internal Testers</li>
+</ul>
+<p class="image-container"><img alt="09_10_01_test_detail" src="img/fee839f624761904.png"><img alt="09_10_02_add_internal_testers" src="img/7e26cfeec6596fda.png"><img alt="09_10_03_choose_internal_tester" src="img/c4eef2766945003c.png"><img alt="09_10_04_successfully" src="img/2902aeae4875b200.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Gửi Testflight build đến External Testers" duration="5">
+        <p class="image-container"><img alt="09_11_01_add_external_group" src="img/30a3ae2256eee6e7.png"><img alt="09_11_02_add_external_group" src="img/bf9af2b9589c1e78.png"><img alt="09_11_03_add_build" src="img/94ffbaee1bc629d1.png"><img alt="09_11_04_choose_build" src="img/68bad244181b7532.png"><img alt="09_11_05_require_signin" src="img/ed9fef8390a55e0d.png"><img alt="09_11_06_what_to_test" src="img/cccf9447a8ef0a89.png"><img alt="09_11_07_add_build_successfully" src="img/67d9ffaf02cb3dfa.png"></p>
 
 
       </google-codelab-step>

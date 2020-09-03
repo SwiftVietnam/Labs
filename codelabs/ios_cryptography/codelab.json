@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-02T00:12:06+08:00",
+  "id": "ios_cryptography",
+  "duration": 1,
+  "title": "iOS Cryptography",
+  "authors": "An Tran",
+  "summary": "iOS Cryptography",
+  "source": "ios_cryptography.md",
+  "theme": "",
+  "status": [
+    "hidden"
+  ],
+  "category": [
+    "swift package manager"
+  ],
+  "tags": [
+    "cryptography"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "ios_cryptography"
+}

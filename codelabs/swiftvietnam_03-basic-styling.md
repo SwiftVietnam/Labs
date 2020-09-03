@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Basic styling.
 id: swiftvietnam_03-basic-styling
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published 
 authors: An Tran
@@ -35,7 +35,7 @@ struct ContentView: View {
 }
 ```
 
-![03_01_creating_list](assets/03/03_01_creating_list.png)
+![03_01_creating_list](assets/swiftvietnam/03/03_01_creating_list.png)
 
 <!-- ------------------------ -->
 ## Change headline font
@@ -60,7 +60,7 @@ struct ContentView: View {
 }
 ```
 
-![03_02_headline](assets/03/03_02_headline.png)
+![03_02_headline](assets/swiftvietnam/03/03_02_headline.png)
 
 <!-- ------------------------ -->
 ## Separate Item into `ItemView`
@@ -89,7 +89,7 @@ struct NewsItemView: View {
 }
 ```
 
-![03_03_creating_a_view](assets/03/03_03_creating_a_view.png)
+![03_03_creating_a_view](assets/swiftvietnam/03/03_03_creating_a_view.png)
 
 <!-- ------------------------ -->
 ## Make it dynamic
@@ -114,4 +114,4 @@ struct ContentView: View {
 }
 ```
 
-![03_04_creating_an_array](assets/03/03_04_creating_an_array.png)
+![03_04_creating_an_array](assets/swiftvietnam/03/03_04_creating_an_array.png)

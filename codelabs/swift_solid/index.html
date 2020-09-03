@@ -1,0 +1,54 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Interface segregation principle</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="swift_solid"
+                  title="Interface segregation principle"
+                  environment="web"
+                  feedback-link="https://swiftvietnam.com">
+    
+      <google-codelab-step label="Định nghĩa" duration="0">
+        <p>Mỗi thành phần hệ thống (class, module, ...) chỉ nên phụ thuộc vào các abstractions, không nên phụ thuộc vào các concretions hoặc implementations cụ thể.</p>
+<h2 is-upgraded>Tại sao cần LSP:</h2>
+<p>Nguyên tắc cũng khá đơn giản về mặt mô hình hoá, bạn hãy tưởng tượng một việc trong thực tế như sau: một hệ thống máy tính sẽ có mainboard là thành phần chính, bộ phận này kết nối các thành phần khác trong hệ thống (như CPU, Ram, ổ cứng, ...) lại với nhau để tạo nên một hệ thống hoạt động hoàn chỉnh và thống nhất. Như bạn đã biết, một mainboard có khả năng kết nối nhiều loại Ram, nhiều loại ổ cứng, ... Dù những nhà sản xuất Ram hay mainboard là độc lập nhau hoàn toàn, và cũng có rất nhiều loại mainboard và ổ cứng khác nhau, nhưng các bộ phận này được kết nối với nhau rất dễ dàng. Làm thế nào để các nhà sản xuất có thể làm được điều này?</p>
+<p>Câu trả lời thực ra rất đơn giản: mọi linh kiện máy tính dù cho có cấu tạo chi tiết khác nhau (implement khác nhau), nhưng luôn giao tiếp với nhau thông qua các chuẩn đã định sẵn (abstraction), cụ thể ở đây là mainboard giao tiếp với ổ đĩa cứng thông qua chuẩn kết nối chung SATA.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="OCP - Case study 1" duration="10">
+        <p>https://nhungdongcodevui.com/2017/04/19/solid-la-gi-nguyen-tac-5-tinh-tuong-thich-dong-dependency-inversion-principle-dip/</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

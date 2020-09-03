@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Remote Datasource.
 id: swiftvietnam_06-remote-datasource
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran
@@ -32,18 +32,18 @@ Duration: 5
 
 ### Sử dụng [Github](https://github.com) hoặc [Swift Package Index](https://swiftpackageindex.com/) để tìm kiếm thư viện bên thứ 3.
 
-![06_01_1_spm_rss](assets/06/06_01_1_spm_rss.png)
-![06_01_1_spm_rss](assets/06/06_01_2_spm_rss.png)
+![06_01_1_spm_rss](assets/swiftvietnam/06/06_01_1_spm_rss.png)
+![06_01_1_spm_rss](assets/swiftvietnam/06/06_01_2_spm_rss.png)
 
 <!-- ------------------------ -->
 ## Tích hợp Swift Package vào Xcode
 Duration: 5
 
-![06_02_1_xcode_spm](assets/06/06_02_1_xcode_spm.png)
-![06_02_2_xcode_spm](assets/06/06_02_2_xcode_spm.png)
-![06_02_3_xcode_spm](assets/06/06_02_3_xcode_spm.png)
-![06_02_4_xcode_spm](assets/06/06_02_4_xcode_spm.png)
-![06_02_5_xcode_spm](assets/06/06_02_5_xcode_spm.png)
+![06_02_1_xcode_spm](assets/swiftvietnam/06/06_02_1_xcode_spm.png)
+![06_02_2_xcode_spm](assets/swiftvietnam/06/06_02_2_xcode_spm.png)
+![06_02_3_xcode_spm](assets/swiftvietnam/06/06_02_3_xcode_spm.png)
+![06_02_4_xcode_spm](assets/swiftvietnam/06/06_02_4_xcode_spm.png)
+![06_02_5_xcode_spm](assets/swiftvietnam/06/06_02_5_xcode_spm.png)
 
 <!-- ------------------------ -->
 ## Sử dụng FeedKit để tải RSS Feed từ Internet
@@ -125,4 +125,4 @@ struct ContentView: View {
 
 ### Kết quả
 
-![06_03_fetch_rss](assets/06/06_03_fetch_rss.gif)
+![06_03_fetch_rss](assets/swiftvietnam/06/06_03_fetch_rss.gif)

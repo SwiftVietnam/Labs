@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Using UIKit.
 id: swiftvietnam_05-using-uikit
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran
@@ -40,7 +40,7 @@ struct SafariView: UIViewControllerRepresentable {
 ```
 
 <!-- ------------------------ -->
-## Lưu liên kết khi
+## Lưu liên kết
 Duration: 5
 
 ### Thêm biến `link` để lưu liên kết
@@ -67,10 +67,6 @@ List {
 ### Toàn bộ mã nguồn `ContentView`
 
 ```swift
-//
-//  Copyright by An Tran.
-//
-
 import SwiftUI
 
 struct NewsItem: Hashable {
@@ -157,4 +153,4 @@ struct ContentView_Previews: PreviewProvider {
 
 ### Kết quả
 
-![05_01_opening_safariview](assets/05/05_01_opening_safariview.gif)
+![05_01_opening_safariview](assets/swiftvietnam/05/05_01_opening_safariview.gif)

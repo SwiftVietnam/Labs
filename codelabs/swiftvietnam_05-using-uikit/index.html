@@ -59,7 +59,7 @@ struct SafariView: UIViewControllerRepresentable {
 
       </google-codelab-step>
     
-      <google-codelab-step label="Lưu liên kết khi" duration="5">
+      <google-codelab-step label="Lưu liên kết" duration="5">
         <h2 is-upgraded>Thêm biến <code>link</code> để lưu liên kết</h2>
 <pre><code>@State var link: URL? = nil
 </code></pre>
@@ -76,11 +76,7 @@ List {
 }
 </code></pre>
 <h2 is-upgraded>Toàn bộ mã nguồn <code>ContentView</code></h2>
-<pre><code>//
-//  Copyright by An Tran.
-//
-
-import SwiftUI
+<pre><code>import SwiftUI
 
 struct NewsItem: Hashable {
     let title: String

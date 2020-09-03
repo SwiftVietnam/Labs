@@ -1,6 +1,6 @@
 summary: Swift Việt Nam - Kiến trúc MVVM.
 id: swiftvietnam_07-mvvm-architecture
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran
@@ -14,6 +14,16 @@ Duration: 1
 ### Bạn sẽ học gì?
 - Xây dựng kiến trúc MVVM.
 - Tích hợp Swift Package Manager
+
+<!-- ------------------------ -->
+## Kiến trúc MVVM là gì? 
+Duration: 5
+
+- MVVM
+![07_01_mvvm_pattern](assets/swiftvietnam/07/07_01_mvvm_pattern.png) 
+
+- Apple cũng khuyến khích kiến trúc MVVM cho SwiftUI.
+![07_02_mvvm_swiftui](assets/swiftvietnam/07/07_02_mvvm_swiftui.png) 
 
 <!-- ------------------------ -->
 ## Tạo `ViewModel`

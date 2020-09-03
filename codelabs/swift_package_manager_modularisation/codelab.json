@@ -1,0 +1,26 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-02T21:57:10+08:00",
+  "id": "swift_package_manager_modularisation",
+  "duration": 55,
+  "title": "Mô-đun hoá ứng dụng bằng Swift Package Manager",
+  "authors": "An Tran",
+  "summary": "Swift Package Manager Modularisation",
+  "source": "spm_modularisation.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "swift package manager"
+  ],
+  "tags": [
+    "modularisation",
+    "swiftpackagemanager"
+  ],
+  "feedback": "https://swiftvietnam.com",
+  "url": "swift_package_manager_modularisation"
+}

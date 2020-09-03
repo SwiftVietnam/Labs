@@ -1,19 +1,19 @@
-summary: Swift Việt Nam - Data structure.
+summary: Swift Việt Nam - Cấu trúc dữ liệu.
 id: swiftvietnam_04-data-structure
-categories: swiftui
+categories: SwiftUI
 tags: swiftvietnamapp
 status: Published
 authors: An Tran
 Feedback Link: https://swiftvietnam.com
 
-# Swift Việt Nam - Bài 04: Data Structure
+# Swift Việt Nam - Bài 04: Cấu trúc dữ liệu
 <!-- ------------------------ -->
 ## Overview
 Duration: 1
 
 ### Bạn sẽ học gì?
-- Creating data structures
-- Adding properties to Item
+- Tạo cấu trúc dữ liệu
+- Thêm property vào `Item`
 - Making a SwiftUI view dynamic
 
 <!-- ------------------------ -->
@@ -56,7 +56,7 @@ struct NewsItemView: View {
 ```
 ### Kết quả
 
-![04_01_creating_newsitem](assets/04/04_01_creating_newsitem.png)
+![04_01_creating_newsitem](assets/swiftvietnam/04/04_01_creating_newsitem.png)
 
 <!-- ------------------------ -->
 ## Make list of news items dynamic 
@@ -95,11 +95,11 @@ struct ContentView: View {
 
 ```
 
-![04_02_loading_button](assets/04/04_02_loading_button.png)
+![04_02_loading_button](assets/swiftvietnam/04/04_02_loading_button.png)
 
 ### Kết quả
 
-![04_02_loading_button](assets/04/04_02_loading_button.gif)
+![04_02_loading_button](assets/swiftvietnam/04/04_02_loading_button.gif)
 
 <!-- ------------------------ -->
 ## Extend `NewsItem` to have `link` property
